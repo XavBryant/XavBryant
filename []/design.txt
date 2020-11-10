@@ -1,0 +1,12 @@
+hub
+
+Hub<>
+this is the main webpage.
+This should primarily direct to the new current website project.
+
+scroll down to go to 'analyses' (the array in project)
+
+Design:
+SPIRIN1224 [click] >> current webpage "the array"
+Scroll:
+Old Archive : Analyses >> analyses

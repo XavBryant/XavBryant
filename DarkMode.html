@@ -1,0 +1,151 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<style>
+html, body {
+margin: 0;
+}
+
+.articlemain {
+position: static;
+display: flex;
+justify-content: center;
+background-color: #ECEDE9;
+color: #00293d;
+transition-duration: 1.2s;
+opacity: 0%;
+animation: Anim1 1s forwards;
+animation-fill-mode: forwards;
+animation-delay: 1s;
+animation-timing-function: ease;
+}
+
+@keyframes Anim1 {
+0% {opacity: 0%}
+50% {opacity: 50%}
+100% {opacity: 100%}
+}
+
+.article {
+align-content: center;
+font-size: 180%;
+margin-right: 15%;
+margin-left: 15%;
+line-height: 48px;
+}
+
+/* DarkMode Button */
+
+.DarkModeButton {
+position: fixed;
+right: 5px;
+margin: 8px;
+width: 20px;
+height: 20px;
+border-radius: 100%;
+border-color: #33ccff;
+border-style: solid;
+border-width: 5px;
+background-color: #00293d;
+transition-duration: 0.4s;
+opacity: 100%;
+z-index: 5;
+}
+
+.DarkModeButton:hover {
+width: 30px;
+height: 30px;
+border-width: 0px;
+border-color: #33ccff;
+}
+
+input[type=checkbox] {position: absolute; top: -9999px; left: -9999px;}
+
+
+/* Actions */
+
+input[type=checkbox]:checked ~ .DarkModeButton {
+background-color: #ECEDE9;;
+border-color: #33ccff;
+}
+
+
+input[type=checkbox]:checked ~ .articlemain{
+background-color: #00293d;
+color: #ECEDE9;
+}
+</style>
+
+
+
+</head><body><input type="checkbox" id="DarkModeSwitch" name="DarkModeButton" onclick="setDarkModeState()">
+<label for="DarkModeSwitch" class="DarkModeButton"></label>
+
+<div class="articlemain">
+<div class="article">
+<h2>hi</h2>
+<p>this is textthis is textthis is textthis is textthis is textthis is text
+this is textthis is textthis is textthis is textthis is textthis is text
+this is textthis is textthis is textthis is textthis is textthis is text
+this is textthis is textthis is textthis is textthis is textthis is text
+this is textthis is textthis is textthis is textthis is textthis is text
+this is textthis is textthis is textthis is textthis is textthis is text
+    this is textthis is textthis is textthis is textthis is textthis is text
+    this is textthis is textthis is textthis is textthis is textthis is text
+    this is textthis is textthis is textthis is textthis is textthis is text
+    vthis is textthis is textthis is textthis is textthis is textthis is text
+    this is textthis is textthis is textthis is textthis is textthis is text
+    this is textthis is textthis is textthis is textthis is textthis is text
+this is textthis is textthis is textthis is textthis is textthis is text
+this is textthis is textthis is textthis is textthis is textthis is text
+this is textthis is textthis is textthis is textthis is textthis is text
+this is textthis is textthis is textthis is textthis is textthis is text
+this is textthis is textthis is textthis is textthis is textthis is text
+    this is textthis is textthis is textthis is textthis is textthis is text
+    this is textthis is textthis is textthis is textthis is textthis is text
+    this is textthis is textthis is textthis is textthis is textthis is text
+    vthis is textthis is textthis is textthis is textthis is textthis is text
+    this is textthis is textthis is textthis is textthis is textthis is text
+this is textthis is textthis is textthis is textthis is textthis is text
+this is textthis is textthis is textthis is textthis is textthis is text
+this is textthis is textthis is textthis is textthis is textthis is text
+this is textthis is textthis is textthis is textthis is textthis is text
+this is textthis is textthis is textthis is textthis is textthis is text
+    this is textthis is textthis is textthis is textthis is textthis is text
+    this is textthis is textthis is textthis is textthis is textthis is text
+    this is textthis is textthis is textthis is textthis is textthis is text
+    vthis is textthis is textthis is textthis is textthis is textthis is text
+    this is textthis is textthis is textthis is textthis is textthis is text
+this is textthis is textthis is textthis is textthis is textthis is text
+this is textthis is textthis is textthis is textthis is textthis is text
+this is textthis is textthis is textthis is textthis is textthis is text
+this is textthis is textthis is textthis is textthis is textthis is text
+this is textthis is textthis is textthis is textthis is textthis is text
+    this is textthis is textthis is textthis is textthis is textthis is text
+    this is textthis is textthis is textthis is textthis is textthis is text
+    this is textthis is textthis is textthis is textthis is textthis is text
+    vthis is textthis is textthis is textthis is textthis is textthis is text
+    this is textthis is textthis is textthis is textthis is textthis is text
+</p>
+<p>Status on "DarkModeState" in localstorage</p><div id="result0">false</div>
+<p>returned value of state</p><div id="result1">0</div>
+</div>
+</div>
+
+<script>
+//result of "DarkModeState" in localstorage
+document.getElementById("result0").innerHTML = localStorage.getItem("DarkModeState");
+
+//reconvert
+if (localStorage.getItem("DarkModeState") === "false") {
+var state = 0;} else {var state = 1};
+
+//set checkbox
+document.getElementById("DarkModeSwitch").checked = state;
+
+// result of actual check status
+document.getElementById("result1").innerHTML = state;
+
+function setDarkModeState() {
+var statefloat = document.getElementById("DarkModeSwitch").checked;
+localStorage.setItem("DarkModeState", statefloat);}
+</script></body></html>

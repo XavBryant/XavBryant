@@ -1,0 +1,157 @@
+<style>
+html, body {
+height: 100%;
+margin: 0;
+scroll-snap-type: y mandatory;
+ }
+
+.prlx{
+background-image: url("site-resources/img1.jpg");
+height: 100%;
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+scroll-snap-align: start;
+}
+
+.prlx1 {background-image: url("site-resources/img1.jpg")
+line-height: 100%;
+text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
+transition: .2s ease;
+}
+.prlx2 {background-image: url("site-resources/img2.jpg")}
+.prlx3 {background-image: url("site-resources/img3.jpg")}
+.prlx4 {background-image: url("site-resources/img4.jpg")}
+.prlx5 {background-image: url("site-resources/img5.jpg");}
+
+
+
+.title {
+display: inline-block;
+line-height: 100%;
+font-size: 15rem;
+color: white;
+opacity: 1;
+transition: .2s ease;
+}
+
+.section1 {
+margin:0; padding: 0px;
+display: block;
+position: relative;
+color: rgba(44, 55, 88, 0.01);
+font-family: monospace;
+background-color: white;
+transition: 0.3s;
+height: 500px;
+scroll-snap-align: center;
+font-size: 10rem;
+}
+
+
+.flex-grid {flex: 1; display: flex; height: 50%; background: clear;}
+
+.col{
+border-radius: 2%;
+margin: 1%;
+flex: 1;
+background-size: cover;
+background-color: black;
+transition: .2s ease-in-out;
+
+line-height: 100%;
+text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 15rem;
+
+margin: 1%;
+padding: 0;
+}
+
+.img{
+display:inline-block;
+position: relative;
+height: 100%;
+width: 100%;
+border-radius: 1%;
+background-size: cover;
+background-color: purple;
+background-image: url("img4.jpg");
+opacity: 100%;
+z-index: +0;
+transition: .2s ease-in-out;
+}
+
+.txt {
+display: inline-block;
+opacity: 10%;
+transition: .2s ease-in-out;
+position: absolute;
+color: white;
+z-index: +1;
+
+font-size: 12rem;
+padding: 5%;
+}
+
+.txt:hover{
+opacity: 100%;
+}
+
+.txt:hover ~ .img {
+opacity: 60%;
+}
+
+.section1:hover{
+opacity: 1;
+color: #445588;
+}
+
+
+
+.img1{background-image: url("site-resources/img2.jpg");}
+.img2{background-image: url("site-resources/img3.jpg");}
+.img3{background-image: url("site-resources/img4.jpg");}
+.img4{background-image: url("site-resources/img1.jpg");}
+
+
+
+
+</style>
+
+
+<div class="prlx prlx1"><div class="title">SPIRIN1224</div></div>
+
+<div class="section1">
+This is a portfolio site.
+</div>
+
+<div class="prlx prlx2"></div>
+<div class="prlx prlx3"></div>
+<div class="prlx prlx5">
+
+<div class="flex-grid">
+<div class="col">
+<div class="txt">Blender</div><div class="img img1"></div>
+</div>
+<div class="col">
+<div class="txt">HTML</div><div class="img img2"></div>
+</div>
+</div>
+
+<div class="flex-grid">
+<div class="col">
+<div class="txt">Coding</div><div class="img img3"></div>
+</div>
+<div class="col">
+<div class="txt">More!</div><div class="img img4"></div>
+</div>
+</div>
+
+<div class="prlx prlx4"><div class="title">Thank You!</div></div>

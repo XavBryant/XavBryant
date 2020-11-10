@@ -1,0 +1,22 @@
+<style>
+.articlemain {
+position: static;
+display: flex;
+justify-content: center;
+}
+
+.article {
+align-content: center;
+font-size: 180%;
+margin-right: 15%;
+margin-left: 15%;
+line-height: 48px;
+}
+</style>
+
+
+<link rel="stylesheet" href="../../article.css">
+<div class="articlemain">
+<div class="article">
+
+</div></div>
