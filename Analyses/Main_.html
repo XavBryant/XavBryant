@@ -1,0 +1,241 @@
+<link rel="stylesheet" href="article.css">
+<style>
+
+/*
+Nav menu
+*/
+
+.bg {
+background-color: white;
+}
+
+.AlphaCT, .CT2, .CT3 {
+visibility: hidden;
+padding: 0px;
+margin: 0px;
+font-size: 0px;
+transition: .2s ease-in-out;
+opacity: 0%;
+top: 50px;
+position: absolute;
+}
+
+.CT2, .CT3 {
+position: fixed;
+left: 336px;
+}
+
+.CT3 { left: 400px; }
+
+.ItemLVL1, .ItemLVL2 {
+display: block;
+position: relative;
+width: 158px;
+height: 50px;
+background-color: black;
+color: white;
+font-size:16px;
+text-align: center;
+line-height: 50px;
+text-decoration: none;
+list-style-type: none;
+align-items: top;
+margin: 0;
+margin-bottom: 12px;
+padding: 0%;
+border-radius: 1px;
+border: 2px dotted #1e87e6;
+box-shadow: 0px 0px 0px 5px black;
+opacity: 100%;
+transition: .2s ease-in-out;
+}
+
+.ItemLVL1:hover  {
+border: 2px solid #33ccff;
+border-radius: 6px;
+}
+
+.ItemLVL1:hover > .CT2 {
+visibility: visible;
+opacity: 100%;
+left: 181px;
+}
+
+.ItemLVL1:hover > .CT3 {
+visibility: visible;
+opacity: 100%;
+left: 354px;
+}
+
+
+/*
+The floating button
+*/
+
+label {
+position: absolute;
+margin: 0px 0px 0px 0px;
+width: 30px;
+height: 30px;
+border-radius: 100%;
+border-color: blue;
+border-style: solid;
+background-color: grey;
+text-align: center;
+font-size: 8px;
+left: 10px;
+top: 5px;
+opacity: 50%;
+transition-duration: 0.4s;
+}
+
+label:hover {
+border-radius: 0%;
+opacity: 100%;
+border-color: #33ccff;
+}
+
+label:checked {
+background-color: black;
+opacity: 0%;
+}
+
+input[type=checkbox]:checked ~ .AlphaCT {
+visibility: visible;
+opacity: 100%;
+display: block;
+}
+
+input[type=checkbox]:checked ~ label {
+background-color: black;
+border-radius: 0%;
+opacity: 100%;
+border-color: #33ccff;
+}
+
+input[type=checkbox] {
+	position: relative;
+	top: -9999px;
+	left: -9999px;
+}
+
+a {
+  color:inherit;
+  text-decoration: none;
+ }
+
+a:link {
+   color:inherit;
+}
+
+/*
+End Of Nessecary css
+*/
+@keyframes fade {
+  0%, { opacity: 0 }
+  100% { opacity: 1 }
+}
+</style>
+
+<div class"bg">
+
+<input type="checkbox" id="toggle">
+<label for="toggle"></label>
+
+<div class="AlphaCT">
+
+<div class="ItemLVL1">Concepts
+<div class="CT2">
+<div class="ItemLVL1">_Systems
+<div class="CT3">
+<div class="ItemLVL1"><a href ="articles/Concepts/systems/Allied.html">Allied</a></div>
+<div class="ItemLVL1"><a href ="articles/Concepts/systems/FracturedOrganization.html">FracturedOrganization</a></div>
+<div class="ItemLVL1"><a href ="articles/Concepts/systems/personalfundementals.html">Personal Fundamentals</a></div>
+</div>
+</div>
+
+<div class="ItemLVL1"><a href ="articles/Concepts/Armor.html">Armor</a></div>
+<div class="ItemLVL1"><a href ="articles/Concepts/Concepts1.html">Concepts1</a></div>
+<div class="ItemLVL1"><a href ="articles/Concepts/FragmentedPlot.html">FragmentedPlot</a></div>
+<div class="ItemLVL1"><a href ="articles/Concepts/Specialization.html">Specialization</a></div>
+<div class="ItemLVL1"><a href ="articles/Concepts/specializedproccessingunits.html">SpecializedProccessingUnitys</a></div>
+<div class="ItemLVL1"><a href ="articles/Concepts/userinterface.html">User Interface</a></div>
+<div class="ItemLVL1"><a href ="articles/Concepts/UserInterfaces.html">User Interfaces</a></div>
+<div class="ItemLVL1"><a href ="articles/Concepts/WeaponTheory.html">Weapon Theory</a></div>
+</div>
+</div>
+
+
+<div class="ItemLVL1">Ideas - Designs
+<div class="CT2">
+
+<div class="ItemLVL1">Operating Systems
+<div class="CT3">
+<div class="ItemLVL1"><a href ="articles/Ideas-Designs_/_operatingsystems/Access_Assess-Estimate.html">Access_Assess-Estimate</a></div>
+<div class="ItemLVL1"><a href ="articles/Ideas-Designs_/_operatingsystems/LITE.html">LITE</a></div>
+<div class="ItemLVL1"><a href ="articles/Ideas-Designs_/_operatingsystems/SentinelProtocol.html">SentinelProtocol</a></div>
+</div>
+</div>
+
+<div class="ItemLVL1"><a href ="articles/Ideas-Designs_/clothing-jacket.html">Clothing - Jacket</a></div>
+<div class="ItemLVL1"><a href ="articles/Ideas-Designs_/spaceship-design.html">Spaceship Design</a></div>
+<div class="ItemLVL1"><a href ="articles/Ideas-Designs_/TacticsBackpack.html">Tactics Backpack</a></div>
+</div>
+</div>
+
+
+<div class="ItemLVL1">Tactical_
+<div class="CT2">
+
+<div class="ItemLVL1">_games
+<div class="CT3">
+<div class="ItemLVL1"><a href ="articles/Tactical_/_games/FracturedSpace.html">Fractured Space</a></div>
+
+<div class="ItemLVL1"><a href ="articles/Tactical_/_games/
+StarConflict.html">Star Conflict</a></div>
+</div>
+</div>
+
+<div class="ItemLVL1"><a href ="articles/Tactical_/alliespt1.html">Allies Pt1</a></div>
+<div class="ItemLVL1"><a href ="articles/Tactical_/Aniticipation.html"> Aniticipation</a></div>
+<div class="ItemLVL1"><a href ="articles/Tactical_/Flash-Courage.html"> Flash-Courage</a></div>
+<div class="ItemLVL1"><a href ="articles/Tactical_/ForcedMistakes-Error.html"> ForcedMistakes</a></div>
+<div class="ItemLVL1"><a href ="articles/Tactical_/Health.html"> Health</a></div>
+<div class="ItemLVL1"><a href ="articles/Tactical_/Positioning.html"> Positioning </a></div>
+<div class="ItemLVL1"><a href ="articles/Tactical_/Strafing.html"> Strafing</a></div>
+<div class="ItemLVL1"><a href ="articles/Tactical_/Subtley.html"> Subtley </a></div>
+</div>
+</div>
+
+
+
+
+<div class="ItemLVL1">Traces
+<div class="CT2">
+<div class="ItemLVL1"><a href ="articles/Traces_/DreadnoughtTacticalChallenge.html"> Dreadnought Tactical Challenge </a></div>
+<div class="ItemLVL1"><a href ="articles/Traces_/DTC1.html"> DTC1 </a></div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="articlemain">
+<div class="article">
+<h2>Welcome to 'Analyses'!</h2>
+<p>
+this is a very very old framework for a article archive [website?]</p>
+<p>As such, please understand that much of the content in here is created by me..
+and thus has much bias and overall old style thinking and thoughts.
+This was initiated and created many many years ago. (I think)
+</p>
+<p>
+and so the thoughts in this are just for a past reference, and for basically no reason.
+And do NOT reflect my current thinking, thoughts, or opinions.
+</p>
+<p> also this site is made using a new launcher and darkmode. both of which are not part of 'analyses' originally, but included here A. to test, and B. because it is nice.
+</p>
+<p> Link to old nav launcher here>> <a href="MainARCHIVE.html"> [Original Nav Menu] </a></p>
+</div>
+</div>
+

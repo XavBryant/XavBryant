@@ -1,0 +1,224 @@
+<style>
+.articlemain {
+position: static;
+display: flex;
+justify-content: center;
+}
+
+.article {
+align-content: center;
+font-size: 180%;
+margin-right: 15%;
+margin-left: 15%;
+line-height: 48px;
+}
+
+
+/* Nav menu */
+.master {
+display: none;
+}
+.container {
+display: none;
+position: fixed;
+width: 190px;
+height: 220px;
+}
+.container1 {
+display: none;
+position: fixed;
+width: 190px;
+height: 220px;
+}
+.menu {
+display: block; 
+position: relative; 
+width: 160px;
+height: 60px;
+background-color: #f1f1f1; 
+font-size:15px;
+font-family: sans-serif;
+color: darkblue;
+text-align: center;
+line-height: 60px;
+text-decoration: none; 
+list-style-type: none; 
+align-items: top;
+margin: 0;
+margin-bottom: 2px;
+border-radius: 12px 5px 5px 12px;
+border: 2px solid blue;
+top: 37px;
+}
+.submenu {
+display: inline-block;
+position: relative;
+width: 160px;
+height: 60px;
+background-color: #f1f1f1; 
+font-size:15px;
+font-family: sans-serif;
+text-align: center;
+line-height: 60px;
+align-items: top;
+margin-bottom: 2px;
+border-radius: 5px 12px 12px 5px;
+border: 2px solid blue;
+}
+.submenu1 {
+display: block;
+position: relative;
+width: 160px;
+height: 60px;
+background-color: #f1f1f1; 
+font-size:15px;
+font-family: sans-serif;
+text-align: center;
+line-height: 60px;
+align-items: top;
+margin-bottom: 3px;
+border-radius: 5px 12px 12px 5px;
+border: 2px solid blue;
+}
+
+/* Hover Actions */
+.menu:hover > .container {
+display: block;
+position: fixed;
+left: 160px;
+top: 45px
+}
+
+.menu:hover {
+border: 2px solid aqua;
+}
+
+.submenu:hover {
+border: 2px solid aqua;
+}
+
+.submenu1:hover {
+border: 2px solid aqua;
+}
+
+.submenu:hover .container1 {
+display: block;
+position: fixed;
+left: 340px;
+top: 45px;
+}
+
+
+/* The floating button */
+.button {
+position: fixed;
+}
+label {
+position: fixed;
+width: 30px;
+height: 30px;
+border-radius: 20px;
+text-align: center;
+background-color: darkblue;
+font-size; 8px;
+top: 4px;
+left: 4px;
+
+z-index: +2;
+}
+input[type=checkbox]:checked ~ .master {
+	display: block;
+    position: fixed;
+}
+
+input[type=checkbox] {
+	position: fixed;
+	top: 5;
+	left: 5;
+    z-index: +1;
+}
+
+/*
+End Of Nessecary css
+*/
+</style>
+
+<input type="checkbox" id="toggle">
+<label for="toggle"></label>
+
+<div class="master">
+
+<div class="menu">Concepts/
+<div class="container">
+<div class="submenu">/Systems
+<div class="container1">
+
+<div class="submenu1"> <a href ="articles/Concepts/systems/Allied.html">Allied</a></div>
+<div class="submenu1"> <a href ="articles/Concepts/systems/FracturedOrganization.html">FracturedOrganization</a></div>
+<div class="submenu1"> <a href ="articles/Concepts/systems/personalfundementals.html">Personal Fundamentals</a></div>
+</div>
+</div>
+<div class="submenu"><a href ="articles/Concepts/Armor.html">Armor</a></div>
+<div class="submenu"><a href ="articles/Concepts/Concepts1.html">Concepts1</a></div>
+<div class="submenu"><a href ="articles/Concepts/FragmentedPlot.html">FragmentedPlot</a></div>
+<div class="submenu"><a href ="articles/Concepts/Specialization.html">Specialization</a></div>
+<div class="submenu"><a href ="articles/Concepts/specializedproccessingunits.html">SpecializedProccessingUnitys</a></div>
+<div class="submenu"><a href ="articles/Concepts/userinterface.html">User Interface</a></div>
+<div class="submenu"><a href ="articles/Concepts/UserInterfaces.html">User Interfaces</a></div>
+<div class="submenu"><a href ="articles/Concepts/WeaponTheory.html">Weapon Theory</a></div>
+</div>
+</div>
+
+<div class="menu">Ideas/
+<div class="container">
+<div class="submenu">/operating systems
+<div class="container1">
+<div class="submenu1"><a href ="articles/Ideas-Designs_/_operatingsystems/Access_Assess-Estimate.html">Access_Assess-Estimate</a></div>
+<div class="submenu1"><a href ="articles/Ideas-Designs_/_operatingsystems/LITE.html">LITE</a></div>
+<div class="submenu1"><a href ="articles/Ideas-Designs_/_operatingsystems/SentinelProtocol.html">SentinelProtocol</a></div>
+</div>
+</div>
+<div class="submenu"><a href ="articles/Ideas-Designs_/clothing-jacket.html">Clothing - Jacket</a></div>
+<div class="submenu"><a href ="articles/Ideas-Designs_/spaceship-design.html">Spaceship Design</a></div>
+<div class="submenu"><a href ="articles/Ideas-Designs_/TacticsBackpack.html">Tactics Backpack</a></div>
+</div>
+</div>
+
+<div class="menu">Tactical/
+<div class="container">
+<div class="submenu">/games
+<div class="container1">
+<div class="submenu1"><a href ="articles/Tactical_/_games/FracturedSpace.html">Fractured Space</a></div>
+<div class="submenu1"><a href ="articles/Tactical_/_games/
+StarConflict.html">Star Conflict</a></div>
+</div>
+</div>
+<div class="submenu"><a href ="articles/Tactical_/alliespt1.html">Allies Pt1</a></div>
+<div class="submenu"><a href ="articles/Tactical_/Aniticipation.html"> Aniticipation</a></div>
+<div class="submenu"><a href ="articles/Tactical_/Flash-Courage.html"> Flash-Courage</a></div>
+<div class="submenu"><a href ="articles/Tactical_/ForcedMistakes-Error.html"> ForcedMistakes</a></div>
+<div class="submenu"><a href ="articles/Tactical_/Health.html"> Health</a></div>
+<div class="submenu"><a href ="articles/Tactical_/Positioning.html"> Positioning </a></div>
+<div class="submenu"><a href ="articles/Tactical_/Strafing.html"> Strafing</a></div>
+<div class="submenu"><a href ="articles/Tactical_/Subtley.html"> Subtley </a></div>
+</div>
+</div>
+
+<div class="menu">Trace/
+<div class="container">
+<div class="submenu"><a href ="articles/Traces_/DreadnoughtTacticalChallenge.html"> Dreadnought Tactical Challenge </a></div>
+<div class="submenu"><a href ="articles/Traces_/DTC1.html"> DTC1 </a></div>
+</div>
+</div>
+
+</div>
+
+<div class="articlemain">
+<div class="article">
+<h2>Original Floating Nav Menu!</h2>
+<p>This is the original floating menu bar navigation!
+</p>
+<p> this was a unseemly amount of time and pain and effort to code this with ridiculously little knowledge and experience.</p>
+<p> Link to old nav launcher here>> <a href="Main__.html"> [Original Nav Menu] </a></p>
+</div>
+</div>
