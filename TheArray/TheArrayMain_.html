@@ -59,7 +59,7 @@ font-family: 'Montserrat', sans-serif;
 }
 
 
-.flex-grid {flex: 1; display: flex; height: 50%; background: clear;}
+.flex-grid {flex: 1; display: flex; flex-wrap: wrap; height: 100%; background: clear;}
 
 .col{
 border-radius: 2%;
@@ -79,6 +79,7 @@ font-family: 'Montserrat', sans-serif;
 
 margin: 1%;
 padding: 0;
+flex: 40%
 }
 
 .img{
@@ -88,32 +89,33 @@ height: 100%;
 width: 100%;
 border-radius: 1%;
 background-size: cover;
-background-color: purple;
+background-color: black;
 background-image: url("img4.jpg");
-opacity: 100%;
+opacity: 80%;
 z-index: +0;
-transition: .2s ease-in-out;
+transition: .4s ease-in-out;
 }
 
 .txt {
 display: inline-block;
-opacity: 10%;
+opacity: 60%;
 transition: .2s ease-in-out;
 position: absolute;
 color: white;
 z-index: +1;
-
 font-size: 12rem;
-padding: 5%;
-font-family: 'Montserrat', sans-serif;
+padding: 2%;
+font-family: 'Montserrat', sans-serif;text-decoration: none;
 }
+
+.txt1 {font-size: 8rem;}
 
 .txt:hover{
 opacity: 100%;
 }
 
 .txt:hover ~ .img {
-opacity: 60%;
+opacity: 40%;
 }
 
 .section1:hover{
@@ -124,7 +126,7 @@ color: #445588;
 
 
 .img1{background-image: url("site-resources/img2.jpg");}
-.img2{background-image: url("site-resources/img3.jpg");}
+.img2{background-image: url("site-resources/html.png");}
 .img3{background-image: url("site-resources/img4.jpg");}
 .img4{background-image: url("site-resources/img1.jpg");}
 
@@ -145,21 +147,23 @@ This is a portfolio site.
 <div class="prlx prlx5">
 
 <div class="flex-grid">
+
 <div class="col">
-<div class="txt">Blender</div><div class="img img1"></div>
-</div>
-<div class="col">
-<div class="txt">HTML</div><div class="img img2"></div>
-</div>
+<a class="txt"href="#">Blender</a><div class="img img1"></div>
 </div>
 
-<div class="flex-grid">
 <div class="col">
-<div class="txt">Coding</div><div class="img img3"></div>
+<a class="txt txt1" href="Work/htmlcss.html">HTML/CSS</a><div class="img img2"></div>
 </div>
+
 <div class="col">
-<div class="txt">More!</div><div class="img img4"></div>
+<a class="txt"href="#">Coding</a><div class="img img3"></div>
 </div>
+
+<div class="col">
+<a class="txt" href="#">More!</a><div class="img img4"></div>
+</div>
+
 </div>
 
 <div class="prlx prlx4"><div class="title">Thank You!</div></div>
