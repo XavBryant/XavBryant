@@ -1,4 +1,6 @@
+<title>The Array :: Nav Hub</title>
 <html>
+
 <style>
 bg {position:fixed;width:100%;height:200%;background: linear-gradient(90deg, #020024, #00d4ff);animation: spin 12s infinite; z-index: -5;}
 @keyframes spin {from { transform: scale3d(2,2,1) rotateZ(0deg); }to { transform: scale3d(2,2,1) rotateZ(360deg); }}
@@ -6,18 +8,16 @@ bg {position:fixed;width:100%;height:200%;background: linear-gradient(90deg, #02
 /* Montserrate Font Import */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
-section1 {width:100%; height:60%; align-items: center;
+section1, section2 {width:100%; height:30%; align-items: center;
 display: flex;
 justify-content: center;
 text-align: center;
+font-family: 'Montserrat',sans-serif;font-size: 12vw;color: white;
+margin: 0; padding: 0;
+color: #8cc8dc;
 }
 
-t {font-family: 'Montserrat',sans-serif;font-size: 12vw;color: white;}
-a {color:inherit;text-decoration: none;}
-a:link {color:inherit;}
-a:visited {color: #1e98fd;}
-
-
+section2 {;font-size: 8vw; color:00283c ;}
 
 .flex-grid {  display: flex;
 align-items: center;
@@ -26,16 +26,22 @@ margin-top: 5%;
 justify-content: space-between;
 }
 
-.Item {
+a {
 flex: 1;margin: 1%;padding: 1%;
 height:90%; width:10%;
 text-align: center;font-size: 4.3rem; line-height: 2.3;
 background-color: black;color: white;
-transition: .2s ease-in-out;
+transition: .4s ease-in-out;
 font-family: 'Montserrat',sans-serif;
+color:inherit;text-decoration: none; flex;1
 }
+a:link {color:inherit;}
+a:visited {color: #1e98fd;}
 
-.Item:hover{
+
+
+
+a:hover{
 background-color: white;
 color: black;
 padding: 1.5%;
@@ -46,14 +52,18 @@ padding: 1.5%;
 <bg></bg>
 
 <section1>
-    <t>Xavier Bryant  -Nav Hub-</t>
+Xavier Bryant
 </section1>
+
+<section2>
+The Array :: Nav Hub
+</section2>
 
 
 
 <div class="flex-grid">
-<div class="Item"><a href ="TheArray/TheArrayMain_.html">The Array</a></div>
-<div class="Item"><a href ="TheArray/ArrayLog.html">The Array Log</a></div>
-<div class="Item"><a href ="Analyses/Main_.html">'Analyses'</a></div>
+<a href ="TheArray/TheArrayMain_.html">The Array</a>
+<a href ="TheArray/ArrayLog.html">The Array Log</a>
+<a href ="Analyses/Main_.html">'Analyses'</a>
 </div>
 </html>
