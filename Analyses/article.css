@@ -1,4 +1,7 @@
 <style>
+/* Montserrate Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 .articlemain {
 position: static;
 display: flex;
@@ -11,6 +14,7 @@ font-size: 180%;
 margin-right: 15%;
 margin-left: 15%;
 line-height: 48px;
+font-family: 'Montserrat', sans-serif;
 }
 </style>
 
