@@ -12,12 +12,13 @@ section1, section2 {width:100%; height:30%; align-items: center;
 display: flex;
 justify-content: center;
 text-align: center;
-font-family: 'Montserrat',sans-serif;font-size: 12vw;color: white;
+font-family: 'Montserrat',sans-serif;font-size: 9vw;color: white;
 margin: 0; padding: 0;
 color: #8cc8dc;
+padding-top: 1%;
 }
 
-section2 {;font-size: 8vw; color:00283c ;}
+section2 {;font-size: 6vw; color:00283c ;}
 
 .flex-grid {  
 display: flex;
@@ -27,21 +28,21 @@ margin-top: 5%;
 justify-content: space-between;
 }
 
-a {
+.LinkBox {
 flex: 1;margin: 1%;padding: 1%;
 height:90%; width:10%;
 text-align: center;font-size: 4.3rem; line-height: 2.3;
-background-color: black;color: white;
+background-color: black;
 transition: .4s ease-in-out;
 font-family: 'Montserrat',sans-serif;
 color:#1e98fd;text-decoration: none; flex;1
 }
-a:visited {color: #1e98fd;}
+.LinkBox:visited {color: #1e98fd;}
 
 
 
 
-a:hover{
+.LinkBox:hover{
 background-color: white;
 color: black;
 padding: 1.5%;
@@ -52,18 +53,18 @@ padding: 1.5%;
 <bg></bg>
 
 <section1>
-Xavier Bryant
+The Array :: Nav Hub
 </section1>
 
 <section2>
-The Array :: Nav Hub
+Xavier Bryant
 </section2>
 
 
 
 <div class="flex-grid">
-<a href ="TheArray/TheArrayMain_.html">The Array</a>
-<a href ="TheArray/ArrayLog.html">The Array Log</a>
-<a href ="Analyses/Main_.html">'Analyses'</a>
+<a class="LinkBox" href ="TheArray/TheArrayMain_.html">The Array</a>
+<a class="LinkBox" href ="TheArray/ArrayLog.html">The Array Log</a>
+<a class="LinkBox" href ="Analyses/Main_.html">'Analyses'</a>
 </div>
 </html>

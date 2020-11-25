@@ -56,6 +56,18 @@ box-shadow: 0px 0px 0px 5px black;
 opacity: 100%;
 transition: .2s ease-in-out;
 font-family: 'Montserrat', sans-serif;
+
+font-weight: 900;
+}
+
+.ItemLVL1:link, .ItemLVL2 {
+font-weight: normal;
+color: #1e98fd;
+}
+
+.ItemLVL1:visited, .ItemLVL2 {
+font-weight: normal;
+color: white;
 }
 
 .ItemLVL1:hover  {
@@ -86,39 +98,35 @@ margin: 0px 0px 0px 0px;
 width: 30px;
 height: 30px;
 border-radius: 100%;
-border-color: blue;
+border-color: 33ccff;
 border-style: solid;
 background-color: #00283c;
 text-align: center;
 font-size: 8px;
 left: 10px;
 top: 5px;
-opacity: 50%;
-transition-duration: 0.4s;
+opacity: 10%;
+transition-duration: 0.6s;
+transition-timing-function: ease-in-out;
 }
 
 label:hover {
-border-radius: 0%;
+scale: 1.1;
 opacity: 100%;
-border-color: #33ccff;
-}
-
-label:checked {
-
-opacity: 0%;
 }
 
 input[type=checkbox]:checked ~ .AlphaCT {
 visibility: visible;
 opacity: 100%;
 display: block;
+transition: .4s ease-in-out;
 }
 
 input[type=checkbox]:checked ~ label {
-background-color: black;
 border-radius: 0%;
 opacity: 100%;
 border-color: #33ccff;
+transition: .4s ease-in-out;
 }
 
 input[type=checkbox] {
@@ -127,8 +135,6 @@ input[type=checkbox] {
 	left: -9999px;
 }
 
-a {color:inherit;text-decoration: none;color: #3A5361;}
-a:link {color:inherit;color: #1e98fd;}
 
 /*
 End Of Nessecary css
@@ -150,19 +156,19 @@ End Of Nessecary css
 <div class="CT2">
 <div class="ItemLVL1">_Systems
 <div class="CT3">
-<div class="ItemLVL1"><a href ="articles/Concepts/systems/Allied.html">Allied</a></div>
-<div class="ItemLVL1"><a href ="articles/Concepts/systems/FracturedOrganization.html">FracturedOrganization</a></div>
-<div class="ItemLVL1"><a href ="articles/Concepts/systems/personalfundementals.html">Personal Fundamentals</a></div>
+<a class="ItemLVL1" href ="articles/Concepts/systems/Allied.html">Allied</a>
+<a class="ItemLVL1" href ="articles/Concepts/systems/FracturedOrganization.html">FracturedOrganization</a>
+<a class="ItemLVL1" href ="articles/Concepts/systems/personalfundementals.html">Personal Fundamentals</a>
 </div>
 </div>
 
-<div class="ItemLVL1"><a href ="articles/Concepts/Armor.html">Armor</a></div>
-<div class="ItemLVL1"><a href ="articles/Concepts/Concepts1.html">Concepts1</a></div>
-<div class="ItemLVL1"><a href ="articles/Concepts/FragmentedPlot.html">FragmentedPlot</a></div>
-<div class="ItemLVL1"><a href ="articles/Concepts/Specialization.html">Specialization</a></div>
-<div class="ItemLVL1"><a href ="articles/Concepts/specializedproccessingunits.html">SpecializedProccessingUnitys</a></div>
-<div class="ItemLVL1"><a href ="articles/Concepts/userinterface.html">User Interface</a></div>
-<div class="ItemLVL1"><a href ="articles/Concepts/WeaponTheory.html">Weapon Theory</a></div>
+<a class="ItemLVL1" href ="articles/Concepts/Armor.html">Armor</a>
+<a class="ItemLVL1" href ="articles/Concepts/Concepts1.html">Concepts1</a>
+<a class="ItemLVL1" href ="articles/Concepts/FragmentedPlot.html">FragmentedPlot</a>
+<a class="ItemLVL1" href ="articles/Concepts/Specialization.html">Specialization</a>
+<a class="ItemLVL1" href ="articles/Concepts/specializedproccessingunits.html">SpecializedProccessingUnitys</a>
+<a class="ItemLVL1" href ="articles/Concepts/userinterface.html">User Interface</a>
+<a class="ItemLVL1" href ="articles/Concepts/WeaponTheory.html">Weapon Theory</a>
 </div>
 </div>
 
@@ -172,15 +178,15 @@ End Of Nessecary css
 
 <div class="ItemLVL1">_Op Sys
 <div class="CT3">
-<div class="ItemLVL1"><a href ="articles/Ideas-Designs/operatingsystems/Access_Assess-Estimate.html">Access_Assess-Estimate</a></div>
-<div class="ItemLVL1"><a href ="articles/Ideas-Designs/operatingsystems/LITE.html">LITE</a></div>
-<div class="ItemLVL1"><a href ="articles/Ideas-Designs/operatingsystems/SentinelProtocol.html">SentinelProtocol</a></div>
+<a class="ItemLVL1" href ="articles/Ideas-Designs/operatingsystems/Access_Assess-Estimate.html">Access_Assess-Estimate</a>
+<a class="ItemLVL1" href ="articles/Ideas-Designs/operatingsystems/LITE.html">LITE</a>
+<a class="ItemLVL1" href ="articles/Ideas-Designs/operatingsystems/SentinelProtocol.html">SentinelProtocol</a>
 </div>
 </div>
 
-<div class="ItemLVL1"><a href ="articles/Ideas-Designs/clothing-jacket.html">Clothing - Jacket</a></div>
-<div class="ItemLVL1"><a href ="articles/Ideas-Designs/spaceship-design.html">Spaceship Design</a></div>
-<div class="ItemLVL1"><a href ="articles/Ideas-Designs/TacticsBackpack.html">Tactics Backpack</a></div>
+<a class="ItemLVL1" href ="articles/Ideas-Designs/clothing-jacket.html">Clothing - Jacket</a>
+<a class="ItemLVL1" href ="articles/Ideas-Designs/spaceship-design.html">Spaceship Design</a>
+<a class="ItemLVL1" href ="articles/Ideas-Designs/TacticsBackpack.html">Tactics Backpack</a>
 </div>
 </div>
 
@@ -190,19 +196,19 @@ End Of Nessecary css
 
 <div class="ItemLVL1">_Games
 <div class="CT3">
-<div class="ItemLVL1"><a href ="articles/Tactical/games/FracturedSpace.html">Fractured Space</a></div>
-<div class="ItemLVL1"><a href ="articles/Tactical/games/StarConflict.html">Star Conflict</a></div>
+<a class="ItemLVL1" href ="articles/Tactical/games/FracturedSpace.html">Fractured Space</a>
+<a class="ItemLVL1" href ="articles/Tactical/games/StarConflict.html">Star Conflict</a>
 </div>
 </div>
 
-<div class="ItemLVL1"><a href ="articles/Tactical/alliespt1.html">Allies Pt1</a></div>
-<div class="ItemLVL1"><a href ="articles/Tactical/Aniticipation.html"> Aniticipation</a></div>
-<div class="ItemLVL1"><a href ="articles/Tactical/Flash-Courage.html"> Flash-Courage</a></div>
-<div class="ItemLVL1"><a href ="articles/Tactical/ForcedMistakes-Error.html"> ForcedMistakes</a></div>
-<div class="ItemLVL1"><a href ="articles/Tactical/Health.html"> Health</a></div>
-<div class="ItemLVL1"><a href ="articles/Tactical/Positioning.html"> Positioning </a></div>
-<div class="ItemLVL1"><a href ="articles/Tactical/Strafing.html"> Strafing</a></div>
-<div class="ItemLVL1"><a href ="articles/Tactical/Subtley.html"> Subtley </a></div>
+<a class="ItemLVL1" href ="articles/Tactical/alliespt1.html">Allies Pt1</a>
+<a class="ItemLVL1" href ="articles/Tactical/Aniticipation.html"> Aniticipation</a>
+<a class="ItemLVL1" href ="articles/Tactical/Flash-Courage.html"> Flash-Courage</a>
+<a class="ItemLVL1" href ="articles/Tactical/ForcedMistakes-Error.html"> ForcedMistakes</a>
+<a class="ItemLVL1" href ="articles/Tactical/Health.html"> Health</a>
+<a class="ItemLVL1" href ="articles/Tactical/Positioning.html"> Positioning </a>
+<a class="ItemLVL1" href ="articles/Tactical/Strafing.html"> Strafing</a>
+<a class="ItemLVL1" href ="articles/Tactical/Subtley.html"> Subtley </a>
 </div>
 </div>
 
@@ -211,8 +217,8 @@ End Of Nessecary css
 
 <div class="ItemLVL1">_Traces
 <div class="CT2">
-<div class="ItemLVL1"><a href ="articles/Traces/DreadnoughtTacticalChallenge.html"> Dreadnought Tactical Challenge </a></div>
-<div class="ItemLVL1"><a href ="articles/Traces/DTC1.html"> DTC1 </a></div>
+<a class="ItemLVL1" href ="articles/Traces/DreadnoughtTacticalChallenge.html"> Dreadnought Tactical Challenge </a>
+<a class="ItemLVL1" href ="articles/Traces/DTC1.html"> DTC1 </a>
 </div>
 </div>
 
