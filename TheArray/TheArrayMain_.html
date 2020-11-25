@@ -4,7 +4,8 @@ html, body {
 height: 100%;
 margin: 0;
 scroll-snap-type: y mandatory;
--ms-overflow-style: none;scrollbar-width: none
+-ms-overflow-style: none;scrollbar-width: none;
+font-family: 'Montserrat', sans-serif;
  }
 
 /* Montserrate Font Import */
@@ -21,18 +22,18 @@ scroll-snap-align: start;
 }
 
 
-.prlx::-webkit-scrollbar {display: none;}
+
 
 .prlx1 {background-image: url("site-resources/img1.jpg")
 line-height: 100%;
-text-align: center;
-display: flex;
+align-content: center;
 justify-content: center;
-align-items: center;
 transition: .2s ease;
+flex: 1;
 }
+
 .prlx2 {background-image: url("site-resources/img2.jpg")}
-.prlx3 {background-image: url("site-resources/img3.jpg")}
+.prlx3 {background-image: url("site-resources/img3.jpg");}
 .prlx4 {background-image: url("site-resources/img4.jpg")}
 .prlx5 {background-image: url("site-resources/imgBlenderSphere.jpg");}
 
@@ -46,6 +47,7 @@ color: white;
 opacity: 1;
 transition: .2s ease;
 font-family: 'Montserrat', sans-serif;
+
 }
 
 .section1 {
@@ -65,6 +67,41 @@ font-family: 'Montserrat', sans-serif;
 opacity: 1;
 color: #445588;
 }
+
+
+.textblock{
+width:60%; 
+height:60%;
+position: relative;
+top: 50%;left: 50%;-ms-transform: translateX(-50%) translateY(-50%);-webkit-transform: translate(-50%,-50%);transform: translate(-50%,-50%);
+
+background-color: #00283c;
+color: white;
+display: flex;
+flex-wrap: wrap;
+font-size: 2rem;
+padding: 1%;
+text-align: center;
+align-items: center;
+}
+
+
+
+
+.txtbl2 {
+width:60%; 
+height:60%;
+position: relative;
+top: 50%;left: 50%;-ms-transform: translateX(-50%) translateY(-50%);-webkit-transform: translate(-50%,-50%);transform: translate(-50%,-50%);
+font-size: 12rem;
+background-color: black;
+opacity: 0.5;
+color: white;
+line-height: 250%;
+text-align: center;
+
+}
+
 
 
 
@@ -114,7 +151,6 @@ color: white;
 z-index: +1;
 font-size: 12rem;
 padding: 2%;
-font-family: 'Montserrat', sans-serif;text-decoration: none;
 }
 
 .txt1 {font-size: 8rem;}
@@ -149,8 +185,15 @@ opacity: 20%;
 This is a portfolio site.
 </div>
 
-<div class="prlx prlx2"></div>
-<div class="prlx prlx3"></div>
+<div class="prlx prlx2">
+<div class="textblock"><span>I have been creating digital content for about 5 years.<br><br>I like doing things by scratch, such as this website!<br><br>And the photos you see in the background(Although they could use some work).</span></div>
+
+</div>
+
+
+
+<div class="prlx prlx3"><div class="txtbl2"><span>My Work</span></div></div>
+
 <div class="prlx prlx5">
 
 <div class="flex-grid">
