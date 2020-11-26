@@ -1,2 +1,4 @@
-<link rel="stylesheet" href="nav.css">
-<link rel="stylesheet" href="article.css">
+<style>
+@import url("nav.css")
+@import url("article.css")
+</style>
