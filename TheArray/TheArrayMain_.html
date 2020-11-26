@@ -1,215 +1,139 @@
 <title>The Array</title>
 <style>
+/* Montserrate Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 html, body {
 height: 100%;
 margin: 0;
 scroll-snap-type: y mandatory;
 -ms-overflow-style: none;scrollbar-width: none;
 font-family: 'Montserrat', sans-serif;
- }
-
-/* Montserrate Font Import */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-
-.prlx{
-background-image: url("site-resources/img1.jpg");
-height: 100%;
-background-attachment: fixed;
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
-scroll-snap-align: start;
 }
 
-
-
-
-.prlx1 {background-image: url("site-resources/img1.jpg")
-line-height: 100%;
-align-content: center;
-justify-content: center;
-transition: .2s ease;
-flex: 1;
-}
-
+/* Parralax Images */
+.prlx{height: 100%;background-attachment: fixed;background-size: cover;scroll-snap-align: start;}
+.prlx1 {background-image: url("site-resources/img1.jpg")}
 .prlx2 {background-image: url("site-resources/img2.jpg")}
 .prlx3 {background-image: url("site-resources/img3.jpg");}
 .prlx4 {background-image: url("site-resources/img4.jpg")}
 .prlx5 {background-image: url("site-resources/imgBlenderSphere.jpg");}
 
-
+/* Text Blocks */
+.CNTR {position: relative;top: 50%;left: 50%;-ms-transform: translateX(-50%) translateY(-50%);-webkit-transform: translate(-50%,-50%);transform: translate(-50%,-50%);text-align: center;align-items: center;}
 
 .title {
-display: inline-block;
 line-height: 100%;
 font-size: 15rem;
 color: white;
 opacity: 1;
 transition: .2s ease;
-font-family: 'Montserrat', sans-serif;
-
 }
 
 .section1 {
-margin:0; padding: 0px;
-display: block;
-position: relative;
-color: rgba(44, 55, 88, 0.01);
-font-family: monospace;
-background-color: white;
-transition: 0.3s;
 height: 500px;
 scroll-snap-align: center;
+color: rgba(44, 55, 88, 0.01);
+background-color: white;
 font-size: 10rem;
-font-family: 'Montserrat', sans-serif;
+transition: 0.3s;
 }
-.section1:hover{
-opacity: 1;
-color: #445588;
-}
-
+.section1:hover{color: #445588;}
 
 .textblock{
-width:60%; 
-height:60%;
-position: relative;
-top: 50%;left: 50%;-ms-transform: translateX(-50%) translateY(-50%);-webkit-transform: translate(-50%,-50%);transform: translate(-50%,-50%);
-
-background-color: #00283c;
-color: white;
-display: flex;
-flex-wrap: wrap;
+width:60%; height:60%;
+display: flex;flex-wrap: wrap;
+background-color: #00283c;color: white;
 font-size: 2rem;
 padding: 1%;
-text-align: center;
-align-items: center;
 }
-
-
 
 .textblock2 {
-position: relative;
-width:60%; 
-height:60%;
-top: 50%;left: 50%;-ms-transform: translateX(-50%) translateY(-50%);-webkit-transform: translate(-50%,-50%);transform: translate(-50%,-50%);
-font-size: 12rem;
-background-color: black;
+width:60%;height:60%;
+background-color: black;color: white;
+font-size: 12rem;line-height: 260%;
 opacity: 0.5;
-color: white;
-line-height: 260%;
-text-align: center;
 }
 
-
-.flex-grid {flex: 1; display: flex; flex-wrap: wrap; height: 100%; background: clear;}
+/* Flexbox for "Work" area */
+.flex-grid {
+height:100%;width:100%;
+display: flex; flex-wrap: wrap; justify-content: center;flex-direction: row;
+}
 
 .col{
+height:48%;width:48%;margin: .5%;
+display: flex;justify-content: center;align-items: center;
 border-radius: 2%;
-margin: 1%;
-flex: 1;
-background-size: cover;
 background-color: black;
 transition: .2s ease-in-out;
 
-line-height: 100%;
-text-align: center;
-display: flex;
-justify-content: center;
-align-items: center;
-font-size: 15rem;
-font-family: 'Montserrat', sans-serif;
-
-margin: 1.5%;
-padding: 0;
-flex: 40%
 }
-
-.img{
-display:inline-block;
-position: relative;
-height: 100%;
-width: 100%;
-border-radius: 1%;
-background-size: cover;
-background-color: black;
-background-image: url("img4.jpg");
-opacity: 50%;
-z-index: +0;
-transition: .4s ease-in-out;
-}
+.col:hover {scale: 102%;}
+.col:hover > .txt {opacity: 100%;color: #1e98fd;}
+.col:hover > .img {opacity: 20%;}
 
 .txt {
-display: inline-block;
+position: absolute;
+z-index: +1;
+color: white;
+font-size: 12rem;
+text-decoration: none;
 opacity: 20%;
 transition: .2s ease-in-out;
-position: absolute;
-color: white;
-z-index: +1;
-font-size: 12rem;
-padding: 2%;
 }
 
 .txt1 {font-size: 8rem;}
 
-.txt:hover{
-opacity: 100%;
 
+
+
+/* Images In FlexBox */
+.img{
+position: relative;
+height: 100%;
+width: 100%;
+border-radius: 2%;
+background-size: cover;
+opacity: 50%;
+transition: .4s ease-in-out;
 }
-
-.col:hover {scale: 102%;}
-
-.txt:hover ~ .img {
-opacity: 20%;
-}
-
-
-
-
 .img1{background-image: url("site-resources/blender.png");}
 .img2{background-image: url("site-resources/htmlpic.png");}
 .img3{background-image: url("site-resources/coding.png");}
 .img4{background-image: url("site-resources/unity.png");}
 
-
-
-
+/* End Of Necessary CSS*/
 </style>
 
-<div class="prlx prlx1"><div class="title">XAVIER BRYANT</div></div>
+<div class="prlx prlx1"><div class="CNTR title">XAVIER BRYANT</div></div>
 
-<div class="section1">
-This is a portfolio site.
-</div>
+<div class="section1">This is a portfolio site.</div>
 
 <div class="prlx prlx2">
-<div class="textblock"><span>I have been creating digital content for about 5 years.<br><br>I like doing things by scratch, such as this website!<br><br>And the photos you see in the background(Although they could use some work).</span></div>
-
+	<div class="CNTR textblock"><span>I have been creating digital content for about 5 years.<br><br>I like doing things by scratch, such as this website!<br><br>And the photos you see in the background(Although they could use some work).</span></div>
 </div>
 
-
-
-<div class="prlx prlx3"><div class="textblock2"><span>My Work</span></div></div>
+<div class="prlx prlx3"><div class="CNTR textblock2"><span>My Work</span></div></div>
 
 <div class="prlx prlx5">
 
 <div class="flex-grid">
+	<a class="col" href="#">
+<div class="txt">Blender</div><div class="img img1"></div>
+</a>
 
-<div class="col">
-<a class="txt"href="#">Blender</a><div class="img img1"></div>
+	<a class="col" href="Work/htmlcss.html">
+<div class="txt txt1">HTML/CSS</div><div class="img img2"></div>
+</a>
+
+	<a class="col"href="#">
+<div class="txt">Coding</div><div class="img img3"></div>
+</a>
+
+	<a class="col" href="#">
+<div class="txt">More!</div><div class="img img4"></div>
+</a>
 </div>
 
-<div class="col">
-<a class="txt txt1" href="Work/htmlcss.html">HTML/CSS</a><div class="img img2"></div>
-</div>
-
-<div class="col">
-<a class="txt"href="#">Coding</a><div class="img img3"></div>
-</div>
-
-<div class="col">
-<a class="txt" href="#">More!</a><div class="img img4"></div>
-</div>
-
-</div>
-
-<div class="prlx prlx4"><div class="title">Thank You!</div></div>
+<div class="prlx prlx4"><div class="CNTR title">Thank You!</div></div>

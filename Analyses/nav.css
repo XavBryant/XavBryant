@@ -109,6 +109,7 @@ transition-timing-function: ease-in-out;
 label:hover {
 scale: 1.1;
 opacity: 100%;
+z-index:+5;
 }
 
 input[type=checkbox]:checked ~ .AlphaCT {
