@@ -1,133 +1,45 @@
-/*
-Nav menu
-*/
+/* Montserrate Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
-.bg {
-background-color: white;
-}
-
+/*--Nav Launcher (Menu)*/
 .AlphaCT, .CT2, .CT3 {
-visibility: hidden;
-padding: 0px;
-margin: 0px;
-font-size: 0px;
-transition: .2s ease-in-out;
-opacity: 0%;
-top: 50px;
-position: absolute;
+position: fixed;visibility: hidden;top: 50px;
 font-family: 'Montserrat', sans-serif;
-}
-
+opacity: 0%;transition: .2s ease-in-out;}
 
 .AlphaCT{margin-left:1%;}
-
-p, h2 {font-family: 'Montserrat', sans-serif;}
-
-.CT2, .CT3 {
-position: fixed;
-left: 350px;
-}
-
+.CT2{left: 360px;}
 .CT3 { left: 400px; }
 
-.ItemLVL1, .ItemLVL2 {
-display: block;
-position: relative;
-width: 158px;
-height: 50px;
-background-color: #00283c;
-color: white;
-font-size:16px;
-text-align: center;
-line-height: 50px;
-text-decoration: none;
-list-style-type: none;
-align-items: top;
-margin: 0;
-margin-bottom: 12px;
-padding: 0%;
-border-radius: 1px;
-border: 2px dotted #1e87e6;
-box-shadow: 0px 0px 0px 5px black;
-opacity: 100%;
+.ITEM {
+display: block;width: 160px;height: 50px;
+margin: 0 0 12 0;
+background-color: #00283c;color: white;
+border: 2px dotted #1e87e6;border-radius: 1px;
+box-shadow: 0px 0px 0px 5px #00283c;
+font-size:16px;text-align: center;line-height: 50px;text-decoration: none;
 transition: .2s ease-in-out;
-font-family: 'Montserrat', sans-serif;
-
-font-weight: 900;
 }
 
-.ItemLVL1:link, .ItemLVL2 {
-font-weight: normal;
-color: #1e98fd;
-}
+.ITEM:link {font-weight: normal;color: #1e98fd;}
+.ITEM:visited {font-weight: normal;color: white;}
+.ITEM:hover {border: 2px solid #33ccff;border-radius: 6px;}
+.ITEM:hover > .CT2 {visibility: visible;opacity: 100%;left: 192px;}
+.ITEM:hover > .CT3 {visibility: visible;opacity: 100%;left: 367px;}
 
-.ItemLVL1:visited, .ItemLVL2 {
-font-weight: normal;
-color: white;
-}
-
-.ItemLVL1:hover  {
-border: 2px solid #33ccff;
-border-radius: 6px;
-}
-
-.ItemLVL1:hover > .CT2 {
-visibility: visible;
-opacity: 100%;
-left: 190px;
-}
-
-.ItemLVL1:hover > .CT3 {
-visibility: visible;
-opacity: 100%;
-left: 365px;
-}
-
-
-/*
-The floating button
-*/
-
-label {
-position: absolute;
-margin: 0px 0px 0px 0px;
-width: 30px;
-height: 30px;
-border-radius: 100%;
-border-color: 33ccff;
-border-style: solid;
+/*--Nav Button*/
+.NavButton {
+position: fixed;width: 30px;height: 30px;left: 10px;top: 5px;
 background-color: #00283c;
-text-align: center;
-font-size: 8px;
-left: 10px;
-top: 5px;
-opacity: 10%;
-transition-duration: 0.6s;
-transition-timing-function: ease-in-out;
+border: solid #33ccff;border-radius: 100%;
+opacity: 10%;transition: 0.4s ease-in-out;
+z-index:+6;
 }
 
-label:hover {
-scale: 1.1;
-opacity: 100%;
-z-index:+5;
-}
+.NavButton:hover {scale: 1.1;opacity: 100%;}
 
-input[type=checkbox]:checked ~ .AlphaCT {
-visibility: visible;
-opacity: 100%;
-display: block;
-transition: .4s ease-in-out;
-}
+#NavToggle {position:fixed;display:none;}
 
-input[type=checkbox]:checked ~ label {
-border-radius: 0%;
-opacity: 100%;
-border-color: #33ccff;
-transition: .4s ease-in-out;
-}
+#NavToggle:checked ~ .AlphaCT {visibility: visible;opacity: 100%;transition: .4s ease-in-out;}
 
-input[type=checkbox] {
-	position: absolute;
-	top: -9999px;
-	left: -9999px;
-}
+#NavToggle:checked ~ .NavButton {border-radius: 0%;border-color: #33ccff;opacity: 100%;transition: .4s ease-in-out;}
