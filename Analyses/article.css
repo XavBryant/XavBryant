@@ -2,10 +2,12 @@
 /* Montserrate Font Import */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
-html {margin: 0; height:100%; width:100%; padding: 0;}
-body {margin: 0; padding: 0; height:100%; width:100%; }
-.articlemain {position: absolute; justify-content: center;z-index:-1;background-color: #ECEDE9; color: #00293d; transition-duration: 0.4s; height:100%;width:100%;-ms-overflow-style: none;scrollbar-width: none; overflow-y: scroll;}
-.article {position: relative; z-index:-1;align-content: center; margin: 0% 15% 0% 15%; font-size: 180%; line-height: 48px; opacity: 0%; animation: FadeIn 1s forwards;font-family: 'Montserrat', sans-serif;}
+html{margin: 0; padding: 0;}
+body{margin: 0; padding: 0;}
+
+.articlemain {position: absolute; justify-content: center;z-index:-1;background-color: #ECEDE9; color: #00293d; transition-duration: 0.4s; height:100%;width:100%;scrollbar-width: none; overflow-y: scroll;z-index:-1;}
+
+.article {position: relative; z-index:+20;align-content: center; margin: 0% 15% 0% 15%; font-size: 180%; line-height: 48px; opacity: 0%; animation: FadeIn 1s forwards;font-family: 'Montserrat', sans-serif;}
 
 @keyframes FadeIn {
 0%{opacity: 0%; transform: translate(0px, +40px);}
