@@ -5,9 +5,9 @@
 html{margin: 0; padding: 0;}
 body{margin: 0; padding: 0;}
 
-.articlemain {position: absolute; justify-content: center;z-index:-1;background-color: #ECEDE9; color: #00293d; transition-duration: 0.4s; height:100%;width:100%;scrollbar-width: none; overflow-y: scroll;z-index:-1;}
+.articlemain {position: absolute;height:100%;width:100%;justify-content: center;z-index:-1;background-color: #ECEDE9; color: #00293d; transition-duration: 0.4s;scrollbar-width:none;overflow-y:scroll;}
 
-.article {position: relative; z-index:+20;align-content: center; margin: 0% 15% 0% 15%; font-size: 180%; line-height: 48px; opacity: 0%; animation: FadeIn 1s forwards;font-family: 'Montserrat', sans-serif;}
+.article {position: relative;margin: 0% 15% 0% 15%;align-content:center;font-size: 180%; line-height: 48px; opacity: 0%; animation: FadeIn 1s forwards;font-family: 'Montserrat', sans-serif;}
 
 IFRAME {display:none;}
 
