@@ -9,6 +9,8 @@ body{margin: 0; padding: 0;}
 
 .article {position: relative; z-index:+20;align-content: center; margin: 0% 15% 0% 15%; font-size: 180%; line-height: 48px; opacity: 0%; animation: FadeIn 1s forwards;font-family: 'Montserrat', sans-serif;}
 
+IFRAME {display:none;}
+
 @keyframes FadeIn {
 0%{opacity: 0%; transform: translate(0px, +40px);}
 20% {opacity: 0%; transform: translate(0px, +12px);}
