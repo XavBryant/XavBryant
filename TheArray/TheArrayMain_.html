@@ -58,45 +58,42 @@ opacity: 0.5;
 /* Flexbox for "Work" area */
 .flex-grid {
 height:100%;width:100%;
-display: flex; flex-wrap: wrap; justify-content: center;flex-direction: row;
+flex:1;
+display: flex; flex-wrap: wrap; justify-content: space-evenly;
 }
 
 .col{
-height:48%;width:48%;margin: .5%;
+height:48%;width:48%;
 display: flex;justify-content: center;align-items: center;
 border-radius: 2%;
 background-color: black;
 transition: .2s ease-in-out;
-
+margin: .5%;
 }
+
 .col:hover {scale: 102%;}
 .col:hover > .txt {opacity: 100%;color: #1e98fd;}
-.col:hover > .img {opacity: 20%;}
+.col:hover > .img {opacity: 40%;}
 
-.txt {
+.txt, .txt1 {
 position: absolute;
 z-index: +1;
 color: white;
 font-size: 12rem;
 text-decoration: none;
-opacity: 20%;
+opacity: 10%;
 transition: .2s ease-in-out;
 }
-
 .txt1 {font-size: 8rem;}
 
-
-
-
-/* Images In FlexBox */
 .img{
 position: relative;
 height: 100%;
 width: 100%;
 border-radius: 2%;
 background-size: cover;
-opacity: 50%;
-transition: .4s ease-in-out;
+opacity: 100%;
+transition: .2s ease-in-out;
 }
 .img1{background-image: url("site-resources/blender.png");}
 .img2{background-image: url("site-resources/htmlpic.png");}
