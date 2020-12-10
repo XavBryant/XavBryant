@@ -1,0 +1,18 @@
+Floating button, large, dark mode that says (back to The Array).
+or just (go back)
+
+--
+Design for Work Article/Pages.
+
+Like the darkmode for most of the articles.
+
+dark background, and a more material color for the text.
+Whitish text perhaps.
+
+
+
+-deisgn for gallery
+
+
+left side is a grid of small polaroid images.
+right side is the material that says "demo reel", maybe like the letters area  moving gradient background.
