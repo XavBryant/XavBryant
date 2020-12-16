@@ -35,16 +35,25 @@ display: block;
 
 
 .LeftSide{
-  background-color: darkblue;
+  background-color: #00283c;
   flex: 1;
   padding: 1rem;
 height: 100%;
+border: 2px solid white;
 }
 
 .RightSide{
-  background-color: white;
+  background-color: #00283c;
   flex: 1;
 height: 100%;
+}
+
+.RenderText {
+font-size:800%;
+position:relative;
+vertin
+left: 50%;
+transform: translateX(-50%);
 }
 
 .RendersWrapper {display:flex;}
@@ -56,6 +65,7 @@ background-color: black;
 transition: .2s ease-in-out;
 margin: .5%;
 }
+.ITM:hover {height:22%;width:42%;}
 
 .img {
 position:relative;
@@ -143,6 +153,9 @@ z-index:2;
 </div>
 
 </div>
-<div class="RightSide"></div>
+<div class="RightSide">
+<div class="RenderText">My Blender Renders</div>
+
+</div>
 	</div>
 
