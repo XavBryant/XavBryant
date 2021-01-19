@@ -30,6 +30,11 @@ opacity: 1;
 transition: .2s ease;
 }
 
+.spanw1 {animation: FromLeft 1s forwards;}
+@keyframes FromLeft {0%{opacity: 0%; transform: translate(-60px, 0px);}20% {opacity: 0%; transform: translate(-30px, 0px);}100% {opacity: 100%; transform: translate(0px);} }
+.spanw2 {animation: FromRight 1s forwards;}
+@keyframes FromRight {0%{opacity: 0%; transform: translate(+60px, 0px);}20% {opacity: 0%; transform: translate(+30px, 0px);}100% {opacity: 100%; transform: translate(0px);} }
+
 .section1 {
 height: 500px;
 scroll-snap-align: center;
@@ -101,9 +106,12 @@ transition: .2s ease-in-out;
 .img4{background-image: url("TheArray/site-resources/unity.png");}
 
 /* End Of Necessary CSS*/
+
+
+
 </style>
 
-<div class="prlx prlx1"><div class="CNTR title">XAVIER BRYANT</div></div>
+<div class="prlx prlx1"><div class="CNTR title"><div class="spanw1">XAVIER</div><div class="spanw2">BRYANT</div></div></div>
 
 <div class="section1">This is a portfolio site.</div>
 
