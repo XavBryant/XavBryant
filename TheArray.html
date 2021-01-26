@@ -12,7 +12,7 @@ font-family: 'Montserrat', sans-serif;
 }
 
 /* Parralax Images */
-.prlx{height: 100%;background-attachment: fixed;background-size: cover;scroll-snap-align: start;}
+.prlx {height: 100%;background-attachment: fixed;background-size: cover;scroll-snap-align: start;}
 .prlx1 {background-image: url("TheArray/site-resources/img1.jpg")}
 .prlx2 {background-image: url("TheArray/site-resources/img2.jpg")}
 .prlx3 {background-image: url("TheArray/site-resources/img3.jpg")}
@@ -28,11 +28,19 @@ font-size: 15rem;
 color: white;
 opacity: 1;
 transition: .2s ease;
+animation: COLOR1 5s infinite;
+animation-direction: alternate;
+animation-delay: 2s;
+}
+@keyframes COLOR1 {
+0% {color: white;} 
+50% {color:blue;}
+100% {color: white;}
 }
 
-.spanw1 {animation: FromLeft 1s forwards;}
+.spanw1 {animation: FromLeft 1.6s forwards;}
 @keyframes FromLeft {0%{opacity: 0%; transform: translate(-60px, 0px);}20% {opacity: 0%; transform: translate(-30px, 0px);}100% {opacity: 100%; transform: translate(0px);} }
-.spanw2 {animation: FromRight 1s forwards;}
+.spanw2 {animation: FromRight 1.2s forwards;}
 @keyframes FromRight {0%{opacity: 0%; transform: translate(+60px, 0px);}20% {opacity: 0%; transform: translate(+30px, 0px);}100% {opacity: 100%; transform: translate(0px);} }
 
 .section1 {
