@@ -22,6 +22,11 @@ height:100%;
 display:flex;
 }
 
+.About {
+height:100%;
+display:flex;
+}
+
 
 .RightSide {
 background-color: #00283c;
@@ -127,11 +132,36 @@ background-color: black;
 z-index:2;
 }
 
+video {
+object-fit: cover;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+z-index:-2;
+position:fixed;
+}
 
+
+.AboutText {
+position:relative;height: 50%;width:60%;
+margin: auto;
+background: rgba(0, 0, 0, 0.66);
+color:white;
+font-size:200%;
+font-family: 'Montserrat', sans-serif;
+
+text-align:center;
+}
+
+.AboutText > span {
+color:blue;
+padding: 5%;
+}
 
 </style>
 
-<div class="RendersWrapper">
+	<div class="RendersWrapper">
 
 <div class="LeftSide">
 <div id="RenderGallery" class="RenderGallery">
@@ -158,6 +188,25 @@ z-index:2;
 <div class="RightSide">
 <div class="RenderText">My Blender Renders</div>
 </div>
+
+	</div>
+
+
+
+
+	<div class="About">
+
+
+<video preload="auto" playsinline autoplay muted loop>
+  <source src="BlenderPage/LightFieldCollapse.mp4" type="video/mp4">
+</video>
+
+<div class="AboutText">
+<span>SA blah blajblah blajblah blajblah blajblah blajblah blajblah blajblah blajblah blajblah blajblah blajblah blajblah blaj</span>
+<span>
+<span>
+</div>
+
 
 	</div>
 

@@ -1,0 +1,151 @@
+<title>The Array</title>
+<style>
+/* Montserrate Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+html, body {
+height: 100%;
+margin: 0;
+scroll-snap-type: y mandatory;
+-ms-overflow-style: none;scrollbar-width: none;
+font-family: 'Montserrat', sans-serif;
+scroll-behavior: smooth;
+}
+
+/* Parralax Images */
+.prlx {height: 100%;background-attachment: fixed;background-size: cover;scroll-snap-align: start;}
+.prlx1 {background-image: url("TheArray/site-resources/img1.jpg")}
+.prlx2 {background-image: url("TheArray/site-resources/img2.jpg")}
+.prlx3 {background-image: url("TheArray/site-resources/img3.jpg")}
+.prlx4 {background-image: url("TheArray/site-resources/img4.jpg")}
+.prlx5 {background-image: url("TheArray/site-resources/imgBlenderSphere.jpg")}
+
+/* Text Blocks */
+.CNTR {position: relative;top: 50%;left: 50%;-ms-transform: translateX(-50%) translateY(-50%);-webkit-transform: translate(-50%,-50%);transform: translate(-50%,-50%);text-align: center;align-items: center;}
+
+.title {
+line-height: 100%;
+font-size: 15rem;
+color: white;
+opacity: 1;
+transition: .2s ease;
+animation: COLOR1 5s infinite;
+animation-direction: alternate;
+animation-delay: 2s;
+}
+@keyframes COLOR1 {
+0% {color: white;} 
+50% {color:#3366cc;}
+100% {color: white;}
+}
+
+.sFirstName {animation: FromLeft 1s forwards;}
+@keyframes FromLeft {0%{opacity: 0%; transform: translate(-80px, 0px);}20% {opacity: 0%; transform: translate(-60px, 0px);}100% {opacity: 100%; transform: translate(0px);} }
+
+.sLastName {animation: FromRight 1.6s forwards;}
+@keyframes FromRight {0%{opacity: 0%; transform: translate(+80px, 0px);}20% {opacity: 0%; transform: translate(+60px, 0px);}100% {opacity: 100%; transform: translate(0px);} }
+
+.section1 {
+height: 500px;
+scroll-snap-align: center;
+color: rgba(44, 55, 88, 0.01);
+background-color: white;
+font-size: 10rem;
+transition: 0.3s;
+}
+.section1:hover{color: #445588;}
+
+.textblock {
+width:60%; height:60%;
+background-color: #00283c;color: white;
+font-size: 2rem;
+line-height: 260%;
+padding: 1%;
+vertical-align:middle;
+}
+
+.textblock2 {
+width:60%;height:60%;
+background-color: black;color: white;
+font-size: 12rem;line-height: 260%;
+opacity: 0.5;
+}
+
+/* Flexbox for "Work" area */
+.flex-grid {
+height:100%;width:100%;
+flex:1;
+display: flex; flex-wrap: wrap; justify-content: space-evenly;
+}
+
+.col{
+height:48%;width:48%;
+display: flex;justify-content: center;align-items: center;
+border-radius: 2%;
+background-color: black;
+transition: .2s ease-in-out;
+margin: .5%;
+}
+
+.col:hover {scale: 102%;}
+.col:hover > .txt {opacity: 100%;color: #1e98fd;}
+.col:hover > .img {opacity: 40%;}
+
+.txt, .txt1 {
+position: absolute;
+z-index: +1;
+color: white;
+font-size: 12rem;
+text-decoration: none;
+opacity: 10%;
+transition: .2s ease-in-out;
+}
+.txt1 {font-size: 8rem;}
+
+.img{
+position: relative;
+height: 100%;
+width: 100%;
+border-radius: 2%;
+background-size: cover;
+opacity: 100%;
+transition: .2s ease-in-out;
+}
+.img1{background-image: url("TheArray/site-resources/blender.png");}
+.img2{background-image: url("TheArray/site-resources/htmlpic.png");}
+.img3{background-image: url("TheArray/site-resources/coding.png");}
+.img4{background-image: url("TheArray/site-resources/unity.png");}
+
+/* End Of Necessary CSS*/
+</style>
+
+<div class="prlx prlx1"><div class="CNTR title"><div class="sFirstName">XAVIER</div><div class="sLastName">BRYANT</div></div></div>
+
+<div class="section1">This is a portfolio site.</div>
+
+<div class="prlx prlx2">
+	<div class="CNTR textblock"><span>I have been creating digital content for about 5 years.<br><br>I like doing things by scratch, such as this website!<br><br>And the photos you see in the background.</span></div>
+</div>
+
+<div class="prlx prlx3"><div class="CNTR textblock2"><span>My Work</span></div></div>
+
+<div class="prlx prlx5">
+
+<div class="flex-grid">
+	<a class="col" href="TheArray/Work/blender.html">
+<div class="txt">Blender</div><div class="img img1"></div>
+</a>
+
+	<a class="col" href="TheArray/Work/htmlcss.html"><div class="txt txt1">HTML/CSS</div><div class="img img2"></div>
+</a>
+
+	<a class="col"href="TheArray/Work/coding.html">
+<div class="txt">Coding</div><div class="img img3"></div>
+</a>
+
+	<a class="col" href="TheArray/Work/more.html">
+<div class="txt">More!</div><div class="img img4"></div>
+</a>
+</div>
+
+<div class="prlx prlx4"><div class="CNTR title">Thank You!</div></div>

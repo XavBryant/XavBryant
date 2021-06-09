@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><title>The Array Log for Past Events</title></head>
+<style>
+/* Montserrate Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+html, body {margin: 0;scroll-behavior: smooth;}
+
+.articlemain {position: absolute;width: 100%; height: 100%;
+background-color: #ECEDE9;color: #00293d;transition-duration: 1.2s;
+-ms-overflow-style: none;scrollbar-width: none; overflow-y: scroll;}
+
+.articlemain::-webkit-scrollbar {display: none;}
+
+.article {align-content: center;margin: 0% 15% 0% 15%; font-size: 180%; line-height: 48px;font-family: 'Montserrat', sans-serif;
+animation: FadeIn 1s forwards;}
+
+@keyframes FadeIn {
+0%{opacity: 0%; transform: translate(0px, +40px);}20% {opacity: 0%; transform: translate(0px, +12px);}100% {opacity: 100%; transform: translate(0px);} }
+
+/* DarkMode Button */
+.DarkModeButton {
+position: fixed; top: 0%; right: 0%; width: 30px; height: 30px;z-index: 5;
+margin: 5px; border: solid #00293d; border-radius: 100%; background-color: #ECEDE9; transition-duration: 0.4s;}
+
+.DarkModeButton:hover {border-radius: 0%; border-color: #33ccff;}
+</style>
+
+
+<div onclick="DarkModeToggle()" class="DarkModeButton"></div>
+<div id="ArticleMain" class="articlemain"><div class="article">
+
+<!--
+Template for a new post:
+
+<h2> Text </h2>
+<p> Text </p>
+<br>
+
+-->
+
+<h2> 11-26-2020</h2>
+<p> A lot of polishes to Analyses. Added animations, checked external stylesheets.</p>
+<p>I have also done a first pass at adding the nav-launcher to all articles so you don't have to go 'back' to open a new article. This is using a slick iframe script delete to insert html. A nifty html include of sorts. [I did not create it, but it is something incredibly interesting. Credit: Scott Jehl; Link to Article:[https://www.filamentgroup.com/lab/html-includes/]. Seems to work on Github. We will see how well it works in the future.</p>
+<p>Amidst flying through content, files, projects, as I am grabbing other code from test projects I have done from my personal HTML folder, I am trying to make a few optimizations. I have 'margin:0;padding:0;' everywhere. And sometimes I don't trust external stylesheets for some reason so I include it inside articles <""style>[redundant code for paranoia]<""/style>... so that is being fixed</p>
+<p> Github changes take about 2 minutes before they appear live. (conventionally)</p>
+<br>
+<p>I plan on doing a purposed sprint into fixing and affirming the validity of code in this website. Or this context. The entirety of the system complex. This project. Blah. Anyways, going through, cleaning out redundant code, putting everything hopefully in one or two external stylesheets(Analyses). I will probably have about 3 external stylesheets. 1: article.css, navlauncher.css, darkmodefunction.css(i want a shorter name, but "dmf" doesnt sound like it fits), and of course adding darkmode function to all the articles using the include. Not sure if I should include that together or make it seperate (im going with seperate for redundancy and non-mixed reliability).</p>
+<p>Massive improvements in TheArray, from 215 to 139 lines of code.
+<br>
+
+
+
+<h2> 11-25-2020</h2>
+<p> Finished writing some articles. The images were added to the Array : Main, as well as a fix for the floating cells, (now they wrap in one flex-grid!). Added all or most buttons are fully clickable [Nav Launcher Main is DONE!].</p>
+<p>Fixed some more formatting, cleaned up a bit of code (figured out quicker way to implement clickable link 'div's or containers, boxes, etc.. so that is implemented now). [Everywhere except the old nav launcher]</p>
+<p>I plan on doing more the the Array :: Main, hope to fix the naming scheme. The "Array Nav Hub" is fine, but "The Array", "The Array Log", "Analyses", should do fine. Literally that sentence is not correct at all. I was saying the names I have now are not that good, but as I was typing the names I basically fixed them. So I am going to apply that to the places right now. [DONE]</p>
+<p> did some small tweaks to "The Array", quality of experience. Hid scroll bar, and added a 'focus' effect to hovered bubbles.</p>
+<p>[also downloaded a song by The Postal Service]. </p>
+<br>
+
+
+<h2> 11-24-2020</h2>
+<p> INIT!, Will be updated as day progresses. SUPER QUICK TO DO: Finish out some articles in Analyses, do images for The Array [main site]</p>
+<p>TO NOTE: Git push changes go live [to site] in about 30 seconds.</p>
+<p>some done things</p>
+<p>made boxes clickable links in array nav hub. added titles (like tab titles) to pages. Pushed Montserrat font in more places.</p>
+<p>some minor fixes to Analyses main pages.(renaming 'nav' to 'launcher' (i think)).</p>
+<p>Restored access to operating systems.
+fixed internal formatting. fixed external formatting, consistency fixed.</p>
+<p>more font fixes</p>
+<br>
+
+
+<h2> 11-23-2020</h2>
+<p>Whew!, been gone for a long while, which is funny because no one besides perhaps one other person looks at this.</p>
+<p>So uh, fixed some stuff, fixed home page, website is up and running on new github acc, names been changed. Uhh, various random small text fixes.</p>
+<p> TODO: I need to actually create and start working on the main site. 'The Array', um. That mainly involves taking pictures of the 4 slides, so like a image of Blender, a VFX shot, a screenshot of some sorta of coding text (i think it will be of the html/css of that exact page, as an easter egg perhaps).
+Thankfully this is easy because I just note what filename they are under and simply replace with the correct one. Try and figure out some actual content for the page and not more random images. I do need to make a sub-page of blender .. (and now that I think about it, a sub-subpage for Blender or whatever). Or actually, I don't have to. Just make 'modeling' and 'rendering' and whatnot. </p>
+<br>
+
+
+<h2>10-28-2020</h2>
+<p>Finally fixed the dark mode for this page. and thus, fixed 'dark mode' function. I plan on tightening it some more, either today or in the near future. [done today? almost?]</p>
+<p>Expect some more updates to the main screen, perhaps more formatting, and hopefully some sort of fix for the selection buttons. Hoping to make them (when hovering) 'focus' (be larger) both directions vertically, and not just down.</p>
+<p>BONUS! Imported Montserrat, so everyone can see what I see</p>
+<p> Bonus #2 Having css in the document instead of resourcing it (in head(er) part of the html), results in faster processing. And speaking of speed, loading is cleaner in Google Chrome and not Firefox (at least not mine).</p>
+<p> Made scrollbar invisible!! </p>
+<p>to do: Expand formatting in this to a better font-size, allow list formats, (with smaller font sizes). And add Montserat to the rest of the website, since default font is not that pretty.</p>
+<br>
+
+
+<h2>This is the initial. 10-27-2020</h2>
+<p>Initialized "TheArray_Log", updated the main page for "spirin1224.github.io", added some things, cleaned code for the 'article main'. etc...
+</p>
+
+</div></div></html>
+<script>
+UpdateDarkMode();
+if( !window.localStorage.getItem("DarkMode")){window.localStorage.DarkMode = "false";};
+
+function UpdateDarkMode() {
+if (window.localStorage.DarkMode === "true") {document.getElementById("ArticleMain").style.backgroundColor = "#00293d"; document.getElementById("ArticleMain").style.color = "#ECEDE9";} else {document.getElementById("ArticleMain").style.backgroundColor = "#ECEDE9"; document.getElementById("ArticleMain").style.color = "#00293d";};}
+
+function DarkModeToggle() {
+var x = window.localStorage.DarkMode;
+if (x === "false") {x = "true";} else {x = "false";};
+window.localStorage.DarkMode = x;
+UpdateDarkMode();}
+</script>
+
