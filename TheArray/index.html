@@ -29,20 +29,19 @@ font-size: 15rem;
 color: white;
 opacity: 1;
 transition: .2s ease;
-animation: COLOR1 5s infinite;
-animation-direction: alternate;
+animation: COLOR1 2s;
+animation-fill-mode: forwards;
 animation-delay: 2s;
 }
 @keyframes COLOR1 {
 0% {color: white;} 
-50% {color:#3366cc;}
-100% {color: white;}
+100% {color:#3366cc;}
 }
 
 .sFirstName {animation: FromLeft 1s forwards;}
 @keyframes FromLeft {0%{opacity: 0%; transform: translate(-80px, 0px);}20% {opacity: 0%; transform: translate(-60px, 0px);}100% {opacity: 100%; transform: translate(0px);} }
 
-.sLastName {animation: FromRight 1.6s forwards;}
+.sLastName {animation: FromRight 2s forwards;}
 @keyframes FromRight {0%{opacity: 0%; transform: translate(+80px, 0px);}20% {opacity: 0%; transform: translate(+60px, 0px);}100% {opacity: 100%; transform: translate(0px);} }
 
 .section1 {
@@ -52,8 +51,11 @@ color: rgba(44, 55, 88, 0.01);
 background-color: white;
 font-size: 10rem;
 transition: 0.3s;
+display: flex;
 }
 .section1:hover{color: #445588;}
+.section1 span {margin:auto;}
+
 
 .textblock {
 width:60%; height:60%;
@@ -117,11 +119,54 @@ transition: .2s ease-in-out;
 .img4{background-image: url("site-resources/unity.png");}
 
 /* End Of Necessary CSS*/
+
+
+.About {
+display:flex;
+height:100%;
+
+}
+
+
+video {
+object-fit: cover;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+z-index:-2;
+position:fixed;
+}
+
+
+
+.AboutText {
+height: 40%;width:60%;
+margin: auto;
+background: rgba(0, 0, 0, 0.66);
+color:white;
+font-size:240%;
+font-family: 'Montserrat', sans-serif;
+text-align: center;
+}
+
+.AboutText span {
+color:white;
+position:relative;
+top: 40%;
+}
 </style>
 
-<div class="prlx prlx1"><div class="CNTR title"><div class="sFirstName">XAVIER</div><div class="sLastName">BRYANT</div></div></div>
+<div class="prlx prlx1">
 
-<div class="section1">This is a portfolio site.</div>
+	<div class="CNTR title">
+<div class="sFirstName">The</div>
+<div class="sLastName">RE1\/-\&gt&lt</div>
+	</div>
+</div>
+
+
+<div class="section1"><span>This is a portfolio site.</span></div>
 
 <div class="prlx prlx2">
 	<div class="CNTR textblock"><span>I have been creating digital content for about 5 years.<br><br>I like doing things by scratch, such as this website!<br><br>And the photos you see in the background.</span></div>
@@ -140,6 +185,15 @@ transition: .2s ease-in-out;
 
 <a class="col" href="Work/more.html"><div class="txt">More!</div><div class="img img4"></div></a>
 </div>
+</div>
 
 
-<div class="prlx prlx4"><div class="CNTR title">Thank You!</div></div>
+	<div class="About prlx">
+<video preload="auto" playsinline autoplay muted loop>
+  <source src="site-resources/LightClockFINAL.mp4" type="video/mp4">
+</video>
+
+<div class="AboutText">
+<span>For persoal inquiries email me at spirin1224@gmail.com</span>
+</div>
+	</div>
