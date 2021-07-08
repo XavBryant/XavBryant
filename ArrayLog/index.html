@@ -2,7 +2,7 @@
 <html lang="en">
 <head><title>The Array Log for Past Events</title></head>
 <style>
-/* Montserrate Font Import */
+/* Montserrat Font Import */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 html, body {margin: 0;scroll-behavior: smooth;}
@@ -10,23 +10,15 @@ html, body {margin: 0;scroll-behavior: smooth;}
 .articlemain {position: absolute;width: 100%; height: 100%;
 background-color: #ECEDE9;color: #00293d;transition-duration: 1.2s;
 -ms-overflow-style: none;scrollbar-width: none; overflow-y: scroll;}
-
 .articlemain::-webkit-scrollbar {display: none;}
 
-.article {align-content: center;margin: 0% 15% 0% 15%; font-size: 180%; line-height: 48px;font-family: 'Montserrat', sans-serif;
-animation: FadeIn 1s forwards;}
-
-@keyframes FadeIn {
-0%{opacity: 0%; transform: translate(0px, +40px);}20% {opacity: 0%; transform: translate(0px, +12px);}100% {opacity: 100%; transform: translate(0px);} }
+.article {align-content: center;margin: 0% 15% 0% 15%; font-size: 180%; line-height: 48px;font-family: 'Montserrat', sans-serif; animation: FadeIn 1s forwards;}
+@keyframes FadeIn {0%{opacity: 0%; transform: translate(0px, +40px);}20% {opacity: 0%; transform: translate(0px, +12px);}100% {opacity: 100%; transform: translate(0px);} }
 
 /* DarkMode Button */
-.DarkModeButton {
-position: fixed; top: 0%; right: 0%; width: 30px; height: 30px;z-index: 5;
-margin: 5px; border: solid #00293d; border-radius: 100%; background-color: #ECEDE9; transition-duration: 0.4s;}
-
+.DarkModeButton {position: fixed; top: 0%; right: 0%; width: 30px; height: 30px;z-index: 5;margin: 5px; border: solid #00293d; border-radius: 100%; background-color: #ECEDE9; transition-duration: 0.4s;}
 .DarkModeButton:hover {border-radius: 0%; border-color: #33ccff;}
 </style>
-
 
 <div onclick="DarkModeToggle()" class="DarkModeButton"></div>
 <div id="ArticleMain" class="articlemain"><div class="article">
@@ -44,7 +36,7 @@ Template for a new post:
 <p><b>Notable changes for TheArray:</b></p>
 <p>-Videos in site. <br>-Fixed some overlays. <br>-Fixed animations.<br>-Hopefully some css changes, hope to reduce it a whole lot (the size of the css).<br>-Updated Blender page. (Plan on making rest of pages) <br>...and a few more things. </p>
 <p><b>Notable changes for Analyses:</b></p>
-<p> as far as I know the html include for Analyses is fixed and does work. Next things is 1. Fix /Analyses/[auto to index.html], 2. Add the dark mode button everywhere, 3. do another rough pass through the articles (maybe).</p>
+<p> as far as I know the html include for Analyses is fixed and does work. Next things is 1. Fix /Analyses/[auto to index.html][[[DONE, include DOCTYPE!]]], 2. Add the dark mode button everywhere, 3. do another rough pass through the articles (maybe).4. fix/adjust main launcher (as it is clipping now)[FIXED!]</p>
 <p><b> more upcoming for theArray</b></p>
 <p> 1. More actual content. <br> 2. Another section (to add more content). ((perhaps more than one))., 3. add the remaining pages under "Works".</p>
 

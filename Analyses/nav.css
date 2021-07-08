@@ -9,11 +9,11 @@ opacity: 0%;transition: .2s ease-in-out;}
 
 .AlphaCT{margin-left:1%;}
 .CT2{left: 360px;}
-.CT3 { left: 400px; }
+.CT3 {left: 400px; }
 
 .ITEM {
 display: block;width: 160px;height: 50px;
-margin: 0 0 12 0;
+margin: 0% 0% 6.8% 0%;
 background-color: #00283c;color: white;
 border: 2px dotted #1e87e6;border-radius: 1px;
 box-shadow: 0px 0px 0px 5px #00283c;
@@ -24,8 +24,8 @@ transition: .2s ease-in-out;
 .ITEM:link {font-weight: normal;color: #1e98fd;}
 .ITEM:visited {font-weight: normal;color: white;}
 .ITEM:hover {border: 2px solid #33ccff;border-radius: 6px;}
-.ITEM:hover > .CT2 {visibility: visible;opacity: 100%;left: 192px;}
-.ITEM:hover > .CT3 {visibility: visible;opacity: 100%;left: 367px;}
+.ITEM:hover > .CT2 {visibility: visible;opacity: 100%;left: 194px;}
+.ITEM:hover > .CT3 {visibility: visible;opacity: 100%;left: 369px;}
 
 /*--Nav Button*/
 .NavButton {
