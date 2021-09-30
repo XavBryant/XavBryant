@@ -1,7 +1,7 @@
 <title>The Array Nav Hub</title>
 <html>
 <style>
-bg {position:fixed;width:100%;height:200%;background: linear-gradient(90deg, #020024, #00d4ff);animation: spin 12s infinite; z-index: -5;}
+bg {position:fixed;width:200%;height:300%;background: linear-gradient(90deg, #020024, #00d4ff);animation: spin 12s infinite; z-index: -5;}
 @keyframes spin {from { transform: scale3d(2,2,1) rotateZ(0deg); }to { transform: scale3d(2,2,1) rotateZ(360deg); }}
 
 /* Montserrate Font Import */
@@ -13,11 +13,14 @@ justify-content: center;
 text-align: center;
 font-family: 'Montserrat',sans-serif;font-size: 9vw;color: white;
 margin: 0; padding: 0;
-color: #8cc8dc;
+color: white;
 padding-top: 1%;
 }
 
-section2 {;font-size: 6vw; color:#00283c ;}
+
+section1 {color:#1e98fd;}
+
+section2 {font-size: 6vw; color:white;}
 
 .flex-grid {  
 display: flex;
@@ -30,18 +33,22 @@ justify-content: space-between;
 .LinkBox {
 flex: 1;margin: 1%;padding: 1%;
 height:90%; width:10%;
-text-align: center;font-size: 4.3rem; line-height: 2.3;
-background-color: black;
-transition: .4s ease-in-out;
+font-size: 4rem; 
+background-color: #00283c;
+transition: .3s ease-in-out;
 font-family: 'Montserrat',sans-serif;
-color:#1e98fd;text-decoration: none; flex;1
+color:#1e98fd;text-decoration: none;
+display:flex;
+justify-content: center;
+align-items: center;
 }
 .LinkBox:visited {color: #1e98fd;}
+.LinkBox span {margin:auto;}
 
 .LinkBox:hover{
-background-color: white;
-color: black;
+background-color: #ecece8;
 padding: 1.5%;
+color:#1e98fd;
 }
 
 </style>
@@ -57,8 +64,8 @@ Xavier Bryant
 </section2>
 
 <div class="flex-grid">
-<a class="LinkBox" href ="TheArray/">The Array</a>
-<a class="LinkBox" href ="ArrayLog/">The Array Log</a>
-<a class="LinkBox" href ="Analyses/">'Analyses'</a>
+<a class="LinkBox" href ="TheArray/"><span>The Array</span</a>
+<a class="LinkBox" href ="ArrayLog/"><span>The Array Log</span></a>
+<a class="LinkBox" href ="Analyses/"><span>'Analyses'</span></a>
 </div>
 </html>
