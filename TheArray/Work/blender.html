@@ -13,9 +13,9 @@ html, body {
 -ms-overflow-style: none;scrollbar-width: none;
 }
 
-a:hover, a:visited, a:link, a:active
-{
-    text-decoration: none;
+a:hover, a:visited, a:link, a:active {
+text-decoration: none;
+color:black;
 }
 
 .RendersWrapper {
@@ -28,12 +28,10 @@ height:100%;
 display:flex;
 }
 
-
 .RightSide {
 background-color: #00283c;
 flex:1;
 height: 100%;
-
 }
 
 .RenderText {
@@ -160,7 +158,23 @@ position:relative;
 top: 40%;
 }
 
+.ReturnToPage {
+position: fixed;
+padding: 1%;
+top:1%;
+right:1%;
+background-color:grey;
+transition: .2s ease-in-out;
+}
+
+.ReturnToPage:hover {
+background-color:white;
+scale:1.1;
+}
+
 </style>
+
+<a class="ReturnToPage" href="../index.html#MyWork">Return To 'My Work'.</a>
 
 	<div class="RendersWrapper">
 

@@ -1,16 +1,11 @@
-<title>The Array</title>
+ <!DOCTYPE html>
+<meta charset="ANSI">
+<head><title>The Array</title></head>
 <style>
 /* Montserrate Font Import */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
-html, body {
-height: 100%;
-margin: 0;
-scroll-snap-type: y proximity;
--ms-overflow-style: none;scrollbar-width: none;
-font-family: 'Montserrat', sans-serif;
-scroll-behavior: smooth;
-}
+html, body {height: 100%; margin: 0; scroll-snap-type: y proximity; -ms-overflow-style: none;scrollbar-width: none; font-family: 'Montserrat', sans-serif; scroll-behavior: smooth;}
 
 /* Parralax Images */
 .prlx {height: 100%;background-attachment: fixed;background-size: cover;scroll-snap-align: start;}
@@ -29,32 +24,8 @@ font-size: 15rem;
 color: white;
 opacity: 1;
 transition: .2s ease;
-#animation: COLOR1 2s;
-#animation-fill-mode: forwards;
-#animation-delay: 2s;
-z-index: +6;
-position:relative;
-}
-
-.centerCaption {
-color: white;
 z-index: +6;
 position:absolute;
-}
-
-.theVideo {
-object-fit: cover;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-z-index:-8;
-}
-
-
-@keyframes COLOR1 {
-0% {color: white;} 
-100% {color:#3366cc;}
 }
 
 .sFirstName {animation: FromLeft 1s forwards;}
@@ -63,18 +34,15 @@ z-index:-8;
 .sLastName {animation: FromRight 2s forwards;}
 @keyframes FromRight {0%{opacity: 0%; transform: translate(+80px, 0px);}20% {opacity: 0%; transform: translate(+60px, 0px);}100% {opacity: 100%; transform: translate(+120px,0px);} }
 
+.centerCaption {color: white;}
 
-.VideoSection {
-height: 100%;background-size: cover;scroll-snap-align: start;
-display: flex; z-index: -5;
-position: relative;
-display: flex;
-}
+.VideoSection {background-size: cover;scroll-snap-align: start;position: relative;display: flex;}
+.theVideo {object-fit: cover;min-width: 100%;min-height: 100%;}
 
 .section1 {
 height: 500px;
 scroll-snap-align: center;
-color: rgba(44, 55, 88, 0.01);
+color: rgba(44, 55, 88, 0.00);
 background-color: white;
 font-size: 10rem;
 transition: 0.3s;
@@ -90,24 +58,18 @@ background: rgba(0, 0, 0, 0.30);color: white;
 font-size: 2rem;
 line-height: 260%;
 padding: 1%;
-vertical-align:middle;
-text-align: center;
-align-content: center;
 }
 
 .textblock2 {
 width:60%;height:60%;
-background-color: black;color: white;
-font-size: 12rem;line-height: 260%;
-opacity: 0.5;
+background: rgba(0, 0, 0, 0.30);color: white;
+font-size: 12rem;
+display:flex;
 }
+.textblock2 span {margin:auto;}
 
 /* Flexbox for "Work" area */
-.flex-grid {
-height:100%;width:100%;
-flex:1;
-display: flex; flex-wrap: wrap; justify-content: space-evenly;
-}
+.flex-grid {height:100%;width:100%;flex:1;display: flex; flex-wrap: wrap; justify-content: space-evenly;}
 
 .col{
 height:44%;width:44%;
@@ -118,7 +80,6 @@ transition: .2s ease-in-out;
 margin: 1.3%;
 border: .4rem solid lightgrey;
 }
-
 .col:hover {scale: 102%; border-color:#1e98fd;}
 .col:hover > .txt {opacity: 100%;color: #1e98fd;}
 .col:hover > .img {opacity: 40%;}
@@ -127,7 +88,7 @@ border: .4rem solid lightgrey;
 position: absolute;
 z-index: +1;
 color: white;
-font-size: 12rem;
+font-size: calc(16px + 6vw);
 text-decoration: none;
 opacity: 10%;
 transition: .2s ease-in-out;
@@ -156,28 +117,13 @@ display:flex;
 height:100%;
 }
 
-
-asvideo {
-object-fit: cover;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-z-index:-8;
-}
-
-
-
 .AboutText {
 height: 40%;width:60%;
 background: rgba(0, 0, 0, 0.66);
-color:white;
 font-size:240%;
-font-family: 'Montserrat', sans-serif;
 position: absolute;
 top: 25%;
 left:20%;
-margin:auto;
 display:flex;
 }
 
@@ -189,12 +135,6 @@ margin:auto;
 .ContactInfo {
 top:50%;left:50%;
 }
-
-
-.title {
-position: absolute;
-}
-
 
 
 
@@ -218,11 +158,11 @@ position: absolute;
 <div class="prlx prlx3"><div class="CNTR textblock2"><span>My Work</span></div></div>
 
 <div class="prlx prlx3">
-<div class="flex-grid">
+<div class="flex-grid" div id="MyWork">
 
 <a class="col" href="Work/blender.html#RenderGallery"><div class="txt">Blender</div><div class="img img1"></div></a>
 
-<a class="col" href="Work/htmlcss.html"><div class="txt txt1">HTML/CSS</div><div class="img img2"></div></a>
+<a class="col" href="Work/htmlcss.html"><div class="txt">HTML/CSS</div><div class="img img2"></div></a>
 
 <a class="col"href="Work/coding.html"><div class="txt">Coding</div><div class="img img3"></div></a>
 
@@ -236,7 +176,6 @@ position: absolute;
 <video class="theVideo" preload="auto" playsinline autoplay muted loop>
   <source src="site-resources/LightClockFINAL.mp4" type="video/mp4">
 </video>
-	<div class="AboutText">
-<span> For personal inquiries, email me at spirin1224@gmail.com</span>
-	</div>
+	
+<div class="AboutText"><span> For personal inquiries, email me at xav.bryant@gmail.com</span></div>
 </div>
