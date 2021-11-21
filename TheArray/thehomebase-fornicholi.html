@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<meta charset="ANSI">
+<head><title>The HomeBase - Nicholi</title></head>
+<style>
+/* Montserrate Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+html body {
+height: 100%;
+margin: 0;
+padding: 0;
+font-family: 'Montserrat';
+}
+
+
+.upper {
+position: absolute;
+flex-container;
+display: flex;
+align-items: stretch;
+width:100%;
+height:70%;
+background-color: blue;
+}
+
+
+textarea {
+margin: 0;
+padding: 0;
+resize: none;
+width: 40%;
+height: 100%;
+border: 0;
+background-color: grey;
+outline: none;
+font-size:200%;
+font-family: 'Montserrat';
+}
+
+video {
+margin: 0;
+padding; 0;
+flex-grow: 1;
+z-index: +2;
+float: right;
+width: auto   !important;
+height: 100% !important;
+}
+
+
+
+.lower {
+position: absolute;
+background-color: black;
+height: 30%;
+width: 100%;
+margin: 0;
+padding: 0;
+bottom: 0;
+}
+
+.siterow {
+height: 100%;
+width: 50%;
+background-color: green;
+bottom: 0;
+float: right;
+display: flex;
+}
+
+.SiteItem {
+align-content: center;
+padding: 5%; margin: 2%;
+background-color: white;
+display: flex;
+}
+</style>
+
+
+
+	<div class="upper">
+
+<textarea id="notepad" name="notepad" placeholder="A place for quick notes!">
+</textarea>
+
+
+
+
+<video width="auto" height="100%" preload="auto" autoplay muted loop playsinline>
+<source src="site-resources/LightField1.mp4" type="video/mp4">
+
+
+</div>
+	</div>
+
+
+
+
+	<div class="lower">
+
+<div class="siterow">
+<div class="SiteItem">SC</div>
+<div class="SiteItem">Sub</div>
+<div class="SiteItem">More wallpapers</div>
+<div class="SiteItem">Note from a friend</div>
+</div>
+
+	</div>
+
+
+
+
+
+
+
+</html>
