@@ -18,15 +18,23 @@ html, body {height: 100%; margin: 0; scroll-snap-type: y proximity; -ms-overflow
 /* Text Blocks */
 .CNTR {position: relative;top: 50%;left: 50%;-ms-transform: translateX(-50%) translateY(-50%);-webkit-transform: translate(-50%,-50%);transform: translate(-50%,-50%);text-align: center;align-items: center;}
 
-.title {
+    
+    
+/* Title Section */
+.TitleSection, .ContactSection {
+width: 100%; height: 100%;
 line-height: 100%;
 font-size: 15rem;
 color: white;
 opacity: 1;
 transition: .2s ease;
 z-index: +6;
-position:absolute;
+position:static;
+scroll-snap-align:center;
 }
+
+.TitleSection > span {position: relative; top:25%;left:25%;
+    background-color: aqua;}
 
 .sFirstName {animation: FromLeft 1s forwards;}
 @keyframes FromLeft {0%{opacity: 0%; transform: translate(-80px, 0px);}20% {opacity: 0%; transform: translate(-60px, 0px);}100% {opacity: 100%; transform: translate(-20px,0px);} }
@@ -34,12 +42,10 @@ position:absolute;
 .sLastName {animation: FromRight 2s forwards;}
 @keyframes FromRight {0%{opacity: 0%; transform: translate(+80px, 0px);}20% {opacity: 0%; transform: translate(+60px, 0px);}100% {opacity: 100%; transform: translate(+120px,0px);} }
 
-.centerCaption {color: white;}
+.VideoSection {background-size: cover;scroll-snap-align:end;position: relative;display: flex;}
+.theVideo {object-fit: cover;min-width: 100%;min-height: 100%;position: absolute;}
 
-.VideoSection {background-size: cover;scroll-snap-align: start;position: relative;display: flex;}
-.theVideo {object-fit: cover;min-width: 100%;min-height: 100%;}
-
-.section1 {
+.Section1 {
 height: 500px;
 scroll-snap-align: center;
 color: rgba(44, 55, 88, 0.00);
@@ -48,30 +54,26 @@ font-size: 10rem;
 transition: 0.3s;
 display: flex;
 }
-.section1:hover{color: #445588;}
-.section1 span {margin:auto;}
+.Section1:hover{color: #445588;}
+.Section1 span {margin:auto;}
 
 
-.textblock {
+.textblock, .textblock2 {
 width:60%; height:50%;
 background: rgba(0, 0, 0, 0.30);color: white;
 font-size: 2rem;
 line-height: 260%;
 padding: 1%;
 }
-
-.textblock2 {
-width:60%;height:60%;
-background: rgba(0, 0, 0, 0.30);color: white;
-font-size: 12rem;
-display:flex;
-}
+.textblock2 {font-size: 12rem; display:flex; }
 .textblock2 span {margin:auto;}
 
+
+/* Section 2 - My Work Links */
 /* Flexbox for "Work" area */
 .flex-grid {height:100%;width:100%;flex:1;display: flex; flex-wrap: wrap; justify-content: space-evenly;}
 
-.col{
+.WorkItem{
 height:44%;width:44%;
 display: flex;justify-content: center;align-items: center;
 border-radius: 3%/6%;
@@ -80,9 +82,9 @@ transition: .2s ease-in-out;
 margin: 1.3%;
 border: .4rem solid lightgrey;
 }
-.col:hover {scale: 102%; border-color:#1e98fd;}
-.col:hover > .txt {opacity: 100%;color: #1e98fd;}
-.col:hover > .img {opacity: 40%;}
+.WorkItem:hover {scale: 102%; border-color:#1e98fd;}
+.WorkItem:hover > .txt {opacity: 100%;color: #1e98fd;}
+.WorkItem:hover > .img {opacity: 40%;}
 
 .txt, .txt1 {
 position: absolute;
@@ -109,47 +111,39 @@ transition: .2s ease-in-out;
 .img3{background-image: url("site-resources/coding.png");}
 .img4{background-image: url("site-resources/unity.png");}
 
-/* End Of Necessary CSS*/
 
 
-.About {
+/* Contact Section */
+.ContactSection {
 display:flex;
 height:100%;
 }
 
 .AboutText {
-height: 40%;width:60%;
+height:40%;width:60%;
 background: rgba(0, 0, 0, 0.66);
-font-size:240%;
-position: absolute;
-top: 25%;
-left:20%;
+font-size:24%;
+position: relative;
 display:flex;
+margin: auto;
 }
 
-.AboutText span {
-color:white;
-margin:auto;
-}
-
-.ContactInfo {
-top:50%;left:50%;
-}
-
-
+.AboutText > span {color:white; text-align: center;}
 
 </style>
-<div class="VideoSection">
+
+
+<div class="TitleSection">
 <video class="theVideo" preload="auto" playsinline autoplay muted loop>
   <source src="site-resources/LightField1.mp4" type="video/mp4">
 </video>
-	<div class="title" style="top:25%;left:25%;">
-<div class="sFirstName">The</div>
-<div class="sLastName">RE1\/-\&gt&lt</div>
-	</div>
+	<span>
+<div class="sFirstName">Xavier</div>
+<div class="sLastName">Bryant</div>
+	</span>
 </div>
 
-<div class="section1"><span>This is a portfolio site.</span></div>
+<div class="Section1"><span>This is a portfolio site.</span></div>
 
 <div class="prlx prlx2">
 	<div class="CNTR textblock"><span>I have been creating digital content for about 5 years.<br><br>I like doing things by scratch, such as this website!<br><br>And the photos you see in the background.</span></div>
@@ -160,19 +154,19 @@ top:50%;left:50%;
 <div class="prlx prlx3">
 <div class="flex-grid" div id="MyWork">
 
-<a class="col" href="Work/Blender/index.html#RenderGallery"><div class="txt">Blender</div><div class="img img1"></div></a>
+<a class="WorkItem" href="Work/Blender/index.html#RenderGallery"><div class="txt">Blender</div><div class="img img1"></div></a>
 
-<a class="col" href="Work/htmlcss.html"><div class="txt">HTML/CSS</div><div class="img img2"></div></a>
+<a class="WorkItem" href="Work/htmlcss.html"><div class="txt">HTML/CSS</div><div class="img img2"></div></a>
 
-<a class="col"href="Work/coding.html"><div class="txt">Coding</div><div class="img img3"></div></a>
+<a class="WorkItem"href="Work/coding.html"><div class="txt">Coding</div><div class="img img3"></div></a>
 
-<a class="col" href="Work/more.html"><div class="txt">More!</div><div class="img img4"></div></a>
+<a class="WorkItem" href="Work/more.html"><div class="txt">More!</div><div class="img img4"></div></a>
 
 </div>
 </div>
 
 
-<div class="VideoSection">
+<div class="ContactSection">
 <video class="theVideo" preload="auto" playsinline autoplay muted loop>
   <source src="site-resources/LightClockFINAL.mp4" type="video/mp4">
 </video>
