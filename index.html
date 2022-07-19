@@ -1,6 +1,6 @@
  <!DOCTYPE html>
-<meta charset="ANSI">
-<head><title>The Array</title></head>
+<head><title>The Array</title>
+<meta charset="utf-8"></head>
 <style>
 /* Montserrate Font Import */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
@@ -81,6 +81,9 @@ background-color: black;
 transition: .2s ease-in-out;
 margin: 1.3%;
 border: .4rem solid lightgrey;
+overflow-wrap: normal;
+word-wrap: break-word;
+position: relative;
 }
 .WorkItem:hover {scale: 102%; border-color:#1e98fd;}
 .WorkItem:hover > .txt {opacity: 100%;color: #1e98fd;}
@@ -90,10 +93,13 @@ border: .4rem solid lightgrey;
 position: absolute;
 z-index: +1;
 color: white;
-font-size: calc(16px + 6vw);
+font-size: calc(16px + 3vw);
 text-decoration: none;
-opacity: 10%;
+opacity: 40%;
 transition: .2s ease-in-out;
+word-wrap: break-word;
+margin:4%;
+    text-shadow: -3px 3px 0 #000;
 }
 .txt1 {font-size: 8rem;}
 
@@ -154,11 +160,11 @@ margin: auto;
 <div class="prlx prlx3">
 <div class="flex-grid" div id="MyWork">
 
-<a class="WorkItem" href="Work/Blender/index.html#RenderGallery"><div class="txt">Blender</div><div class="img img1"></div></a>
+<a class="WorkItem" href="Work/Blender/index.html#RenderGallery"><div class="txt">Graphic Modeling and Rendering</div><div class="img img1"></div></a>
 
-<a class="WorkItem" href="Work/htmlcss.html"><div class="txt">HTML/CSS</div><div class="img img2"></div></a>
+<a class="WorkItem" href="Work/htmlcss.html"><div class="txt">Website Coding and Development</div><div class="img img2"></div></a>
 
-<a class="WorkItem"href="Work/coding.html"><div class="txt">Coding</div><div class="img img3"></div></a>
+<a class="WorkItem"href="Work/coding.html"><div class="txt">Game Coding and Development</div><div class="img img3"></div></a>
 
 <a class="WorkItem" href="Work/more.html"><div class="txt">More!</div><div class="img img4"></div></a>
 

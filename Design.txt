@@ -1,9 +1,0 @@
-SPIRIN1224
-
---
-
-then three buttons floating in a horizontal row.
-
-1. The Array
-2. Analyses
-3. Misc.
