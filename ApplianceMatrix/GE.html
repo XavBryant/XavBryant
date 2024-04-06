@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><title>Appliance Matrix WIP</title></head>
+<style>
+html, body {margin: 0;scroll-behavior: smooth;}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+.popout {white-space:pre-line;font-size:180%;font-family: 'Montserrat';}
+
+.article:target {display:block;}
+</style>
+
+<html>
+
+
+
+
+
+
+
+
+<div id="dryers" class="popout">
+For all topload washers: GTW
+
+Entry: Hold start while twisting knob 180 degrees
+
+X X X X X X - All LEDs Blink
+0 0 0 0 0 X - Fault Codes
+0 0 0 X X 0 - Hot Water
+0 0 0 X X X - Cold Water
+0 0 X X 0 0 - Drain Pump
+0 0 X X 0 X - Lid Switch
+0 0 X X X 0 - Spin
+0 0 X X X X - Agitate
+0 X 0 0 0 0 - Clear Fault Codes
+
+</div>
+
+
+
+
+<div class="popout">
+For all ultrafresh front loader washers: GFW, PTW
+
+Service Mode Entry: Unit on, Hold start, turn knob 180 Degrees.
+
+Service Mode Tests:
+0 LED Test
+1 Fault Codes
+2 Personality
+6 Hot Water Valve
+7 Cold Water Valve
+8 Fabric Softener Dispenser
+10 Pressure Sensor
+12 Drain Pump
+13 Door Switch
+14 Spin
+15 Agitate
+16 Clear fault codes
+17 Change Personality
+18 Bulk Detergent Dispenser Valve
+
+*20(PTW*) Water Quality Sensor
+*24(GFW*) Damper
+*26(GFW*) Accelerated Spin Test (spin test with speed feedback)
+</div>
+
+
+
+
+
+
+<div id="Dryers" class="popout" style="float:right;">
+Check for infinite resistance (Open Line) from heater terminal to metal cabinet.
+
+
+* Turn unit on, holding door switch down - verify unit tumbles
+* Make sure getting 240v if basic checks dont work
+
+
+Dryer - no heat
+1. Make sure belt switch is on by ensuring basket spin when running.
+
+2. Unit running, check for 120v from [blue wire] on Temperature control --> Neutral or Ground
+This ensures heating element is being powered, and checks the PURPLE WIRE OF DEATH(tm)
+
+3. Take off vent to ensure proper airflow - it will not heat without airflow. Dont. Forget. It.
+
+4. Check relays,
+</div>
+
+</html>
